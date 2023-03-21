@@ -1,0 +1,302 @@
+[
+  {
+    "class": "African_chameleon"
+  },
+  {
+    "class": "alp"
+  },
+  {
+    "class": "Angora"
+  },
+  {
+    "class": "Appenzeller"
+  },
+  {
+    "class": "Australian_terrier"
+  },
+  {
+    "class": "bannister"
+  },
+  {
+    "class": "barrel"
+  },
+  {
+    "class": "basketball"
+  },
+  {
+    "class": "bath_towel"
+  },
+  {
+    "class": "beacon_pharos"
+  },
+  {
+    "class": "beagle"
+  },
+  {
+    "class": "bikini"
+  },
+  {
+    "class": "black_grouse"
+  },
+  {
+    "class": "black_stork"
+  },
+  {
+    "class": "boa_constrictor"
+  },
+  {
+    "class": "briard"
+  },
+  {
+    "class": "cabbage_butterfly"
+  },
+  {
+    "class": "Capra_ibex"
+  },
+  {
+    "class": "car_wheel"
+  },
+  {
+    "class": "carbonara"
+  },
+  {
+    "class": "castle"
+  },
+  {
+    "class": "confectionery"
+  },
+  {
+    "class": "convertible"
+  },
+  {
+    "class": "coral_fungus"
+  },
+  {
+    "class": "cowboy_hat"
+  },
+  {
+    "class": "cucumber"
+  },
+  {
+    "class": "curly-coated_retriever"
+  },
+  {
+    "class": "desk"
+  },
+  {
+    "class": "digital_clock"
+  },
+  {
+    "class": "dome"
+  },
+  {
+    "class": "Dutch_oven"
+  },
+  {
+    "class": "Egyptian_cat"
+  },
+  {
+    "class": "European_fire_salamander"
+  },
+  {
+    "class": "flat-coated_retriever"
+  },
+  {
+    "class": "four-poster"
+  },
+  {
+    "class": "garbage_truck"
+  },
+  {
+    "class": "golf_ball"
+  },
+  {
+    "class": "Great_Pyrenees"
+  },
+  {
+    "class": "green_mamba"
+  },
+  {
+    "class": "grocery_store"
+  },
+  {
+    "class": "half_track"
+  },
+  {
+    "class": "hand_blower"
+  },
+  {
+    "class": "home_theater"
+  },
+  {
+    "class": "hyena"
+  },
+  {
+    "class": "Indian_elephant"
+  },
+  {
+    "class": "komondor"
+  },
+  {
+    "class": "lighter"
+  },
+  {
+    "class": "long-horned_beetle"
+  },
+  {
+    "class": "lumbermill"
+  },
+  {
+    "class": "lycaenid_butterfly"
+  },
+  {
+    "class": "malinois"
+  },
+  {
+    "class": "Maltese_dog"
+  },
+  {
+    "class": "manhole_cover"
+  },
+  {
+    "class": "maraca"
+  },
+  {
+    "class": "miniature_pinscher"
+  },
+  {
+    "class": "mitten"
+  },
+  {
+    "class": "mixing_bowl"
+  },
+  {
+    "class": "mountain_bike"
+  },
+  {
+    "class": "mud_turtle"
+  },
+  {
+    "class": "Norfolk_terrier"
+  },
+  {
+    "class": "ocarina_sweet_potato"
+  },
+  {
+    "class": "papillon"
+  },
+  {
+    "class": "patas_hussar_monkey"
+  },
+  {
+    "class": "pill_bottle"
+  },
+  {
+    "class": "pirate_ship"
+  },
+  {
+    "class": "pitcher"
+  },
+  {
+    "class": "plate"
+  },
+  {
+    "class": "pomegranate"
+  },
+  {
+    "class": "pot"
+  },
+  {
+    "class": "projector"
+  },
+  {
+    "class": "red-breasted_merganser"
+  },
+  {
+    "class": "rock_python"
+  },
+  {
+    "class": "Rottweiler"
+  },
+  {
+    "class": "rubber_eraser"
+  },
+  {
+    "class": "Scotch_terrier"
+  },
+  {
+    "class": "sea_urchin"
+  },
+  {
+    "class": "Shetland_sheepdog"
+  },
+  {
+    "class": "Siamese_cat"
+  },
+  {
+    "class": "ski_mask"
+  },
+  {
+    "class": "smoothing_iron"
+  },
+  {
+    "class": "sock"
+  },
+  {
+    "class": "steel_arch_bridge"
+  },
+  {
+    "class": "steel_drum"
+  },
+  {
+    "class": "tabby"
+  },
+  {
+    "class": "tench_Tinca_tinca"
+  },
+  {
+    "class": "terrapin"
+  },
+  {
+    "class": "Tibetan_mastiff"
+  },
+  {
+    "class": "toilet_seat"
+  },
+  {
+    "class": "transverse_flute"
+  },
+  {
+    "class": "trench_coat"
+  },
+  {
+    "class": "tricycle"
+  },
+  {
+    "class": "triumphal_arch"
+  },
+  {
+    "class": "tup"
+  },
+  {
+    "class": "unicycle"
+  },
+  {
+    "class": "upright_piano"
+  },
+  {
+    "class": "wallaby_brush_kangaroo"
+  },
+  {
+    "class": "water_jug"
+  },
+  {
+    "class": "Welsh_springer_spaniel"
+  },
+  {
+    "class": "wire-haired_fox_terrier"
+  },
+  {
+    "class": "yurt"
+  }
+]

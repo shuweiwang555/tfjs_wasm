@@ -683,11 +683,25 @@
         const answer = await m.findAnswers("What is Tesla's best invention?", document.getElementById('passage').innerText);
         return answer;
     }
+
+    function choose(choices, numGroup) {
+        const randoms = []
+        while (randoms.length < numGroup) {
+            //console.log(Math.floor(Math.random() * choices.length))
+            let temp = Math.floor(Math.random() * choices.length);
+            if (!randoms.includes(temp)) {
+                randoms.push(temp)
+            }
+        }
+        return randoms;
+    }
+
     // var all_i = [];
-    async function start(backend, i, task) {
+    async function start(backend, i, task, numGroup, numPhoto = 1) {
         tf.wasm.setThreadsCount(1);
         tf.setBackend(backend);
         await tf.ready();
+
         // const model = await tf.loadGraphModel('https://storage.googleapis.com/tfjs-models/savedmodel/mobilenet_v2_1.0_224/model.json');
         // const model = await tf.loadGraphModel('https://storage.googleapis.com/tfjs-models/savedmodel/ssdlite_mobilenet_v2/model.json');
         // const model = await tf.loadGraphModel('https://storage.googleapis.com/tfhub-tfjs-modules/google/imagenet/mobilenet_v1_100_224/classification/1/model.json');
@@ -696,6 +710,8 @@
             model = await tf.loadGraphModel("./models/imagenet_mobilenet_v1_100_224_classification", { fromTFHub: true });
         else if (task == "nlp")
             model = await qna.load();
+
+
         // const model = await tf.loadLayersModel(modelUrl);
 
         // Warmup the model before using real data.
@@ -734,6 +750,7 @@
         // console.log(all_i);
         // return all_i;
 
+        divnum = i;
         i++;
         var all_i2 = [];
         // tf.wasm.setWasmPaths('wasm://wasm/');
@@ -753,6 +770,38 @@
         // console.log(all_i2);
         return all_i2.slice(1);
 
+        var all_i4 = [];
+        var all_i3 = [];
+
+        try {
+            const response = await fetch('http://localhost:8000/100classlist.txt');
+            result3 = await response.json();
+            console.log(result3)
+        }
+        catch (e) {
+            console.log(e);
+        }
+        //console.log(choose(result));
+        for (const d in choose(result3, numGroup)) {
+            document.getElementById("img").src = "./test_data/image_task/image_net/" + result[d].class + "/1.jpg";
+            temp = 0;
+            i = divnum
+            while (i--) {
+                const x = await run(model);
+                temp += x;
+                all_i4.push(x);
+                //console.log(`${i}: ${x}`);
+                // warmupResult2.dispose();
+                // answer.dispose();
+            }
+            all_i3.push(temp / divnum);
+            //console.log(temp / divnum);
+        }
+
+        // console.log(tf.getBackend());
+
+        console.log(all_i4);
+        return all_i3;
         // i = 100;
         // let all_i3 = [];
         // await tf.setBackend('cpu');
@@ -773,7 +822,7 @@
         // The second predict() will be much faster
         // const result = model.predict(document.getElementById('img'));
     }
-    start("wasm", 1, "vision");
+    start("wasm", 1, "vision", 3);
 </script>
 
 <!-- Load TensorFlow.js. This is required to use MobileNet. -->

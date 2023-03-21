@@ -1,0 +1,4070 @@
+[1677663908.369][INFO]: Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 55296
+[1677663908.369][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1677663908.871][INFO]: [0f0d9a585e8f3926cd8ad18a8562a517] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "goog:loggingPrefs": {
+            "performance": "ALL"
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1677663908.874][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1677663908.875][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1677663908.876][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\14832\AppData\Local\Temp\scoped_dir99428_1704329728" data:,
+[1677663909.014][DEBUG]: DevTools HTTP Request: http://localhost:55300/json/version
+[1677663909.324][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/110.0.5481.178",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+   "V8-Version": "11.0.226.16",
+   "WebKit-Version": "537.36 (@f34f7ab2d4ca4ad498ef42aeba4f4eb2c1392d63)",
+   "webSocketDebuggerUrl": "ws://localhost:55300/devtools/browser/7e3370b8-5715-47a3-a239-a08b4a503385"
+}
+
+[1677663909.324][DEBUG]: DevTools HTTP Request: http://localhost:55300/json/list
+[1677663909.325][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:55300/devtools/page/44980C8C40FFFE22B26F07F835C5EC60",
+   "id": "44980C8C40FFFE22B26F07F835C5EC60",
+   "title": "data:,",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:55300/devtools/page/44980C8C40FFFE22B26F07F835C5EC60"
+} ]
+
+[1677663909.327][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1677663909.328][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+[1677663909.328][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1677663909.328][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "75C5F798E4B3E479BEEBD53625F5179B",
+      "canAccessOpener": false,
+      "targetId": "44980C8C40FFFE22B26F07F835C5EC60",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1677663909.328][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "44980C8C40FFFE22B26F07F835C5EC60"
+}
+[1677663909.328][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "75C5F798E4B3E479BEEBD53625F5179B",
+      "canAccessOpener": false,
+      "targetId": "44980C8C40FFFE22B26F07F835C5EC60",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8"
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=3) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol = window.Symbol;}) ();"
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=4) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_adoQpoasnfa76pfcZLmcfl_Symbol = window.Symbol;}) ();"
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Command: Network.enable (id=5) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Command: Page.enable (id=8) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Command: Page.enable (id=9) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=3) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "identifier": "1"
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=4) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Response: Network.enable (id=5) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Response: Page.enable (id=8) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.329][DEBUG]: DevTools WebSocket Response: Page.enable (id=9) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.331][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=10) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.331][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "context": {
+      "auxData": {
+         "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "3319161912974088839.-5705266032452095893"
+   }
+}
+[1677663909.331][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=10) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.331][DEBUG]: DevTools WebSocket Command: Page.enable (id=11) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.332][DEBUG]: DevTools WebSocket Response: Page.enable (id=11) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.332][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=12) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.332][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=12) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.332][DEBUG]: DevTools WebSocket Command: Page.enable (id=13) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.332][DEBUG]: DevTools WebSocket Response: Page.enable (id=13) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663909.332][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "awaitPromise": true,
+   "expression": "(function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebDriver status codes....",
+   "returnByValue": true
+}
+[1677663909.334][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "type": "object",
+      "value": {
+         "status": 0,
+         "value": 1
+      }
+   }
+}
+[1677663909.334][INFO]: [0f0d9a585e8f3926cd8ad18a8562a517] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "110.0.5481.178",
+      "chrome": {
+         "chromedriverVersion": "110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839})",
+         "userDataDir": "C:\\Users\\14832\\AppData\\Local\\Temp\\scoped_dir99428_1704329728"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:55300"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "0f0d9a585e8f3926cd8ad18a8562a517"
+}
+[1677663911.384][INFO]: [0f0d9a585e8f3926cd8ad18a8562a517] COMMAND Navigate {
+   "url": "http://localhost:8000"
+}
+[1677663911.385][INFO]: Waiting for pending navigations...
+[1677663911.385][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=15) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.385][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=15) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.385][DEBUG]: DevTools WebSocket Command: DOM.getDocument (id=16) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663911.386][DEBUG]: DevTools WebSocket Response: DOM.getDocument (id=16) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "root": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "children": [ {
+         "attributes": [  ],
+         "backendNodeId": 2,
+         "childNodeCount": 2,
+         "children": [ {
+            "attributes": [  ],
+            "backendNodeId": 3,
+            "childNodeCount": 0,
+            "localName": "head",
+            "nodeId": 3,
+            "nodeName": "HEAD",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 2
+         }, {
+            "attributes": [  ],
+            "backendNodeId": 4,
+            "childNodeCount": 0,
+            "localName": "body",
+            "nodeId": 4,
+            "nodeName": "BODY",
+            "nodeType": 1,
+            "nodeValue": "",
+            "parentId": 2
+         } ],
+         "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+         "localName": "html",
+         "nodeId": 2,
+         "nodeName": "HTML",
+         "nodeType": 1,
+         "nodeValue": "",
+         "parentId": 1
+      } ],
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 1,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1677663911.386][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true
+}
+[1677663911.386][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1677663911.386][INFO]: Done waiting for pending navigations. Status: ok
+[1677663911.386][DEBUG]: DevTools WebSocket Command: Page.navigate (id=18) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "url": "http://localhost:8000"
+}
+[1677663911.392][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSent (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "documentURL": "http://localhost:8000/",
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasUserGesture": false,
+   "initiator": {
+      "type": "other"
+   },
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "redirectHasExtraInfo": false,
+   "request": {
+      "headers": {
+         "Upgrade-Insecure-Requests": "1",
+         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+         "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+         "sec-ch-ua-mobile": "?0",
+         "sec-ch-ua-platform": "\"Windows\""
+      },
+      "initialPriority": "VeryHigh",
+      "isSameSite": true,
+      "method": "GET",
+      "mixedContentType": "none",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "url": "http://localhost:8000/"
+   },
+   "requestId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "timestamp": 373225.040374,
+   "type": "Document",
+   "wallTime": 1677663911.392033
+}
+[1677663911.694][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSentExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "associatedCookies": [  ],
+   "connectTiming": {
+      "requestTime": 373225.041001
+   },
+   "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Connection": "keep-alive",
+      "Host": "localhost:8000",
+      "Sec-Fetch-Dest": "document",
+      "Sec-Fetch-Mode": "navigate",
+      "Sec-Fetch-Site": "none",
+      "Sec-Fetch-User": "?1",
+      "Upgrade-Insecure-Requests": "1",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+   },
+   "requestId": "FB2928F997847062D45D02E6EF3A3F5F"
+}
+[1677663911.696][DEBUG]: DevTools WebSocket Event: Network.responseReceivedExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "blockedCookies": [  ],
+   "headers": {
+      "Content-Length": "41445",
+      "Content-type": "text/html",
+      "Date": "Wed, 01 Mar 2023 09:45:11 GMT",
+      "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+      "Server": "SimpleHTTP/0.6 Python/3.8.10"
+   },
+   "headersText": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.8.10\r\nDate: Wed, 01 Mar 2023 09:45:11 GMT\r\nContent-type: text/html\r\nContent-Length: 41445\r\nLast-Modified: Wed, 01 Mar 2023 07:54:22 GMT\r\n\r\n",
+   "requestId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "resourceIPAddressSpace": "Local",
+   "statusCode": 200
+}
+[1677663911.696][DEBUG]: DevTools WebSocket Event: Network.responseReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasExtraInfo": true,
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "requestId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "response": {
+      "alternateProtocolUsage": "unspecifiedReason",
+      "connectionId": 44,
+      "connectionReused": false,
+      "encodedDataLength": 188,
+      "fromDiskCache": false,
+      "fromPrefetchCache": false,
+      "fromServiceWorker": false,
+      "headers": {
+         "Content-Length": "41445",
+         "Content-type": "text/html",
+         "Date": "Wed, 01 Mar 2023 09:45:11 GMT",
+         "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+         "Server": "SimpleHTTP/0.6 Python/3.8.10"
+      },
+      "mimeType": "text/html",
+      "protocol": "http/1.0",
+      "remoteIPAddress": "127.0.0.1",
+      "remotePort": 8000,
+      "responseTime": 1.67766391168431e+12,
+      "securityState": "secure",
+      "status": 200,
+      "statusText": "OK",
+      "timing": {
+         "connectEnd": 300.992,
+         "connectStart": 0,
+         "dnsEnd": 0,
+         "dnsStart": 0,
+         "proxyEnd": -1,
+         "proxyStart": -1,
+         "pushEnd": 0,
+         "pushStart": 0,
+         "receiveHeadersEnd": 302.55,
+         "requestTime": 373225.041001,
+         "sendEnd": 301.126,
+         "sendStart": 301.046,
+         "sslEnd": -1,
+         "sslStart": -1,
+         "workerFetchStart": -1,
+         "workerReady": -1,
+         "workerRespondWithSettled": -1,
+         "workerStart": -1
+      },
+      "url": "http://localhost:8000/"
+   },
+   "timestamp": 373225.34403,
+   "type": "Document"
+}
+[1677663911.696][DEBUG]: DevTools WebSocket Response: Page.navigate (id=18) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F"
+}
+[1677663911.696][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "document.URL"
+}
+[1677663911.697][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663911.697][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60"
+}
+[1677663911.713][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663911.713][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "44980C8C40FFFE22B26F07F835C5EC60",
+      "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+      "mimeType": "text/html",
+      "secureContextType": "SecureLocalhost",
+      "securityOrigin": "http://localhost:8000",
+      "url": "http://localhost:8000/"
+   },
+   "type": "Navigation"
+}
+[1677663911.713][DEBUG]: DevTools WebSocket Event: DOM.documentUpdated (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663911.713][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "context": {
+      "auxData": {
+         "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "http://localhost:8000",
+      "uniqueId": "-6663220082729588752.6618256634971219687"
+   }
+}
+[1677663911.713][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 41445,
+   "encodedDataLength": 0,
+   "requestId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "timestamp": 373225.348394
+}
+[1677663911.713][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSent (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "documentURL": "http://localhost:8000/",
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasUserGesture": false,
+   "initiator": {
+      "columnNumber": 67,
+      "lineNumber": 3,
+      "type": "parser",
+      "url": "http://localhost:8000/"
+   },
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "redirectHasExtraInfo": false,
+   "request": {
+      "headers": {
+         "Referer": "http://localhost:8000/",
+         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+         "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+         "sec-ch-ua-mobile": "?0",
+         "sec-ch-ua-platform": "\"Windows\""
+      },
+      "initialPriority": "High",
+      "isSameSite": false,
+      "method": "GET",
+      "mixedContentType": "none",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+   },
+   "requestId": "23560.2",
+   "timestamp": 373225.34925,
+   "type": "Script",
+   "wallTime": 1677663911.700673
+}
+[1677663911.713][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSent (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "documentURL": "http://localhost:8000/",
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasUserGesture": false,
+   "initiator": {
+      "columnNumber": 97,
+      "lineNumber": 5,
+      "type": "parser",
+      "url": "http://localhost:8000/"
+   },
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "redirectHasExtraInfo": false,
+   "request": {
+      "headers": {
+         "Referer": "http://localhost:8000/",
+         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+         "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+         "sec-ch-ua-mobile": "?0",
+         "sec-ch-ua-platform": "\"Windows\""
+      },
+      "initialPriority": "High",
+      "isSameSite": false,
+      "method": "GET",
+      "mixedContentType": "none",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"
+   },
+   "requestId": "23560.3",
+   "timestamp": 373225.349543,
+   "type": "Script",
+   "wallTime": 1677663911.700953
+}
+[1677663911.713][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSent (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "documentURL": "http://localhost:8000/",
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasUserGesture": false,
+   "initiator": {
+      "columnNumber": 50,
+      "lineNumber": 9,
+      "type": "parser",
+      "url": "http://localhost:8000/"
+   },
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "redirectHasExtraInfo": false,
+   "request": {
+      "headers": {
+         "Referer": "http://localhost:8000/",
+         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+         "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+         "sec-ch-ua-mobile": "?0",
+         "sec-ch-ua-platform": "\"Windows\""
+      },
+      "initialPriority": "Low",
+      "isSameSite": true,
+      "method": "GET",
+      "mixedContentType": "none",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "url": "http://localhost:8000/test.jpg"
+   },
+   "requestId": "23560.4",
+   "timestamp": 373225.349754,
+   "type": "Image",
+   "wallTime": 1677663911.70117
+}
+[1677663911.715][DEBUG]: DevTools WebSocket Event: Network.loadingFinished (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "encodedDataLength": 41633,
+   "requestId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "shouldReportCorbBlocking": false,
+   "timestamp": 373225.343844
+}
+[1677663911.715][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "type": "string",
+      "value": "http://localhost:8000/"
+   }
+}
+[1677663911.715][INFO]: Waiting for pending navigations...
+[1677663911.715][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.716][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.822][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSentExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "associatedCookies": [  ],
+   "clientSecurityState": {
+      "initiatorIPAddressSpace": "Local",
+      "initiatorIsSecureContext": true,
+      "privateNetworkRequestPolicy": "PreflightWarn"
+   },
+   "connectTiming": {
+      "requestTime": 373225.349616
+   },
+   "headers": {
+      ":authority": "cdn.jsdelivr.net",
+      ":method": "GET",
+      ":path": "/npm/@tensorflow/tfjs@latest",
+      ":scheme": "https",
+      "accept": "*/*",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-US,en;q=0.9",
+      "referer": "http://localhost:8000/",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "script",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+   },
+   "requestId": "23560.2"
+}
+[1677663911.822][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSentExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "associatedCookies": [  ],
+   "clientSecurityState": {
+      "initiatorIPAddressSpace": "Local",
+      "initiatorIsSecureContext": true,
+      "privateNetworkRequestPolicy": "PreflightWarn"
+   },
+   "connectTiming": {
+      "requestTime": 373225.349839
+   },
+   "headers": {
+      ":authority": "cdn.jsdelivr.net",
+      ":method": "GET",
+      ":path": "/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js",
+      ":scheme": "https",
+      "accept": "*/*",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-US,en;q=0.9",
+      "referer": "http://localhost:8000/",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "script",
+      "sec-fetch-mode": "no-cors",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+   },
+   "requestId": "23560.3"
+}
+[1677663911.822][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.822][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.853][DEBUG]: DevTools WebSocket Event: Network.responseReceivedExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "blockedCookies": [  ],
+   "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "*",
+      "age": "30",
+      "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+      "cache-control": "public, max-age=604800, s-maxage=43200",
+      "cf-cache-status": "HIT",
+      "cf-ray": "7a10773c2bba2f2d-LAX",
+      "content-encoding": "br",
+      "content-type": "application/javascript; charset=utf-8",
+      "cross-origin-resource-policy": "cross-origin",
+      "date": "Wed, 01 Mar 2023 09:45:12 GMT",
+      "etag": "W/\"5d2fb-py5jrvx8sVMxv5M6WSPT7ZOyVIw\"",
+      "nel": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+      "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=LKoogcuplJl5fpoApXM3f2cIt7z8i5K3nnx7ROqaynDHUGwfW2yHPz4m6wjmQSYv%2BPAhV6wZabEH8e9rL08vu%2FV%2FXS%2Fjlk%2BbomRP%2FVHcoodR%2B0aSUE4Q...",
+      "server": "cloudflare",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "timing-allow-origin": "*",
+      "vary": "Accept-Encoding",
+      "x-cache": "HIT, MISS",
+      "~~~": "..."
+   },
+   "requestId": "23560.3",
+   "resourceIPAddressSpace": "Public",
+   "statusCode": 200
+}
+[1677663911.853][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.854][DEBUG]: DevTools WebSocket Event: Network.responseReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasExtraInfo": true,
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "requestId": "23560.3",
+   "response": {
+      "alternateProtocolUsage": "unspecifiedReason",
+      "connectionId": 60,
+      "connectionReused": true,
+      "encodedDataLength": 10952,
+      "fromDiskCache": false,
+      "fromPrefetchCache": false,
+      "fromServiceWorker": false,
+      "headers": {
+         "access-control-allow-origin": "*",
+         "access-control-expose-headers": "*",
+         "age": "30",
+         "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+         "cache-control": "public, max-age=604800, s-maxage=43200",
+         "cf-cache-status": "HIT",
+         "cf-ray": "7a10773c2bba2f2d-LAX",
+         "content-encoding": "br",
+         "content-type": "application/javascript; charset=utf-8",
+         "cross-origin-resource-policy": "cross-origin",
+         "date": "Wed, 01 Mar 2023 09:45:12 GMT",
+         "etag": "W/\"5d2fb-py5jrvx8sVMxv5M6WSPT7ZOyVIw\"",
+         "nel": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+         "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=LKoogcuplJl5fpoApXM3f2cIt7z8i5K3nnx7ROqaynDHUGwfW2yHPz4m6wjmQSYv%2BPAhV6wZabEH8e9rL08vu%2FV%2FXS%2Fjlk%2BbomRP%2FVHcoodR%2B0aSUE4Q...",
+         "server": "cloudflare",
+         "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+         "timing-allow-origin": "*",
+         "vary": "Accept-Encoding",
+         "x-cache": "HIT, MISS",
+         "~~~": "..."
+      },
+      "mimeType": "application/javascript",
+      "protocol": "h2",
+      "remoteIPAddress": "104.16.85.20",
+      "remotePort": 443,
+      "responseTime": 1.677663911841329e+12,
+      "securityDetails": {
+         "certificateId": 0,
+         "certificateTransparencyCompliance": "compliant",
+         "cipher": "AES_128_GCM",
+         "encryptedClientHello": false,
+         "issuer": "Cloudflare Inc ECC CA-3",
+         "keyExchange": "",
+         "keyExchangeGroup": "X25519",
+         "protocol": "TLS 1.3",
+         "sanList": [ "sni.cloudflaressl.com", "cdn.jsdelivr.net" ],
+         "serverSignatureAlgorithm": 1027,
+         "signedCertificateTimestampList": [ {
+            "hashAlgorithm": "SHA-256",
+            "logDescription": "Google 'Argon2023' log",
+            "logId": "E83ED0DA3EF5063532E75728BC896BC903D3CBD1116BECEB69E1777D6D06BD6E",
+            "origin": "Embedded in certificate",
+            "signatureAlgorithm": "ECDSA",
+            "signatureData": "30450220418207EE3EFDE2C987C6978FC47E784963A752AC41A093595935017C73FEFFD8022100C2CE705B693983993A2A66AC95CA581D608464ED60C72D7330AF7768F356B505",
+            "status": "Verified",
+            "timestamp": 1.654159216884e+12
+         }, {
+            "hashAlgorithm": "SHA-256",
+            "logDescription": "DigiCert Yeti2023 Log",
+            "logId": "35CF191BBFB16C57BF0FAD4C6D42CBBBB627202651EA3FE12AEFA803C33BD64C",
+            "origin": "Embedded in certificate",
+            "signatureAlgorithm": "ECDSA",
+            "signatureData": "304402202E93D7D35AA3DE4BEBA1117F65782E4F5959724CBA50579A81299979A69A0B5202207B6FF7259B65D5A7D05435BBC19A9A1A130DDEEBA29D920C5DED0A420A19E48E",
+            "status": "Verified",
+            "timestamp": 1.654159216943e+12
+         }, {
+            "hashAlgorithm": "SHA-256",
+            "logDescription": "Let's Encrypt 'Oak2023' log",
+            "logId": "B73EFB24DF9C4DBA75F239C5BA58F46C5DFC42CF7A9F35C49E1D098125EDB499",
+            "origin": "Embedded in certificate",
+            "signatureAlgorithm": "ECDSA",
+            "signatureData": "3045022100B82BFD59D89CD3D00BB0BFD9470E9857E5B24498A913BF4A13F2829026A8B13A0220412D3372983A381F6017AE4ED9FD13C32F50B04E1CAE7D09A8E3AB64108F0616",
+            "status": "Verified",
+            "timestamp": 1.654159216933e+12
+         } ],
+         "subjectName": "sni.cloudflaressl.com",
+         "validFrom": 1654128000,
+         "validTo": 1685663999
+      },
+      "securityState": "secure",
+      "status": 200,
+      "statusText": "",
+      "timing": {
+         "connectEnd": -1,
+         "connectStart": -1,
+         "dnsEnd": -1,
+         "dnsStart": -1,
+         "proxyEnd": -1,
+         "proxyStart": -1,
+         "pushEnd": 0,
+         "pushStart": 0,
+         "receiveHeadersEnd": 150.544,
+         "requestTime": 373225.349839,
+         "sendEnd": 119.911,
+         "sendStart": 119.809,
+         "sslEnd": -1,
+         "sslStart": -1,
+         "workerFetchStart": -1,
+         "workerReady": -1,
+         "workerRespondWithSettled": -1,
+         "workerStart": -1
+      },
+      "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"
+   },
+   "timestamp": 373225.501211,
+   "type": "Script"
+}
+[1677663911.854][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 53097,
+   "encodedDataLength": 0,
+   "requestId": "23560.3",
+   "timestamp": 373225.501295
+}
+[1677663911.854][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.859][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 33660,
+   "requestId": "23560.3",
+   "timestamp": 373225.507205
+}
+[1677663911.859][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=23) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.860][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=23) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.860][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 241469,
+   "encodedDataLength": 0,
+   "requestId": "23560.3",
+   "timestamp": 373225.507919
+}
+[1677663911.860][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=24) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.860][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=24) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.863][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 6292,
+   "encodedDataLength": 1369,
+   "requestId": "23560.3",
+   "timestamp": 373225.510707
+}
+[1677663911.863][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=25) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.863][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=25) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.868][DEBUG]: DevTools WebSocket Event: Network.responseReceivedExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "blockedCookies": [  ],
+   "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "*",
+      "age": "29727",
+      "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+      "cache-control": "public, max-age=604800, s-maxage=43200",
+      "cf-cache-status": "HIT",
+      "cf-ray": "7a10773c2bb52f2d-LAX",
+      "content-encoding": "br",
+      "content-type": "application/javascript; charset=utf-8",
+      "cross-origin-resource-policy": "cross-origin",
+      "date": "Wed, 01 Mar 2023 09:45:12 GMT",
+      "etag": "W/\"13fccf-XMGs/YzMkclZb+UsOCjMw0oU3jc\"",
+      "nel": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+      "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2FB1YXdmAnX6m4QNwtryNbbNAGFiLJrPaE6mEb598m2%2BYsad84hxHK8%2BgBNOT4TbB6mxoliqPDvI955AVQQJLaiYtumGyhcsLEnIwRbeSS6qemaQMy66vhY92t8Jy...",
+      "server": "cloudflare",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "timing-allow-origin": "*",
+      "vary": "Accept-Encoding",
+      "x-cache": "HIT, MISS",
+      "~~~": "..."
+   },
+   "requestId": "23560.2",
+   "resourceIPAddressSpace": "Public",
+   "statusCode": 200
+}
+[1677663911.868][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 15297,
+   "encodedDataLength": 3623,
+   "requestId": "23560.3",
+   "timestamp": 373225.516042
+}
+[1677663911.868][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=26) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.869][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=26) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.869][DEBUG]: DevTools WebSocket Event: Network.loadingFinished (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "encodedDataLength": 49604,
+   "requestId": "23560.3",
+   "shouldReportCorbBlocking": false,
+   "timestamp": 373225.515843
+}
+[1677663911.869][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=27) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.869][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSentExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "associatedCookies": [  ],
+   "clientSecurityState": {
+      "initiatorIPAddressSpace": "Local",
+      "initiatorIsSecureContext": true,
+      "privateNetworkRequestPolicy": "PreflightWarn"
+   },
+   "connectTiming": {
+      "requestTime": 373225.517042
+   },
+   "headers": {
+      "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Connection": "keep-alive",
+      "Host": "localhost:8000",
+      "Referer": "http://localhost:8000/",
+      "Sec-Fetch-Dest": "image",
+      "Sec-Fetch-Mode": "no-cors",
+      "Sec-Fetch-Site": "same-origin",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+   },
+   "requestId": "23560.4"
+}
+[1677663911.870][DEBUG]: DevTools WebSocket Event: Network.responseReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasExtraInfo": true,
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "requestId": "23560.2",
+   "response": {
+      "alternateProtocolUsage": "unspecifiedReason",
+      "connectionId": 60,
+      "connectionReused": false,
+      "encodedDataLength": 2738,
+      "fromDiskCache": false,
+      "fromPrefetchCache": false,
+      "fromServiceWorker": false,
+      "headers": {
+         "access-control-allow-origin": "*",
+         "access-control-expose-headers": "*",
+         "age": "29727",
+         "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+         "cache-control": "public, max-age=604800, s-maxage=43200",
+         "cf-cache-status": "HIT",
+         "cf-ray": "7a10773c2bb52f2d-LAX",
+         "content-encoding": "br",
+         "content-type": "application/javascript; charset=utf-8",
+         "cross-origin-resource-policy": "cross-origin",
+         "date": "Wed, 01 Mar 2023 09:45:12 GMT",
+         "etag": "W/\"13fccf-XMGs/YzMkclZb+UsOCjMw0oU3jc\"",
+         "nel": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+         "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=%2FB1YXdmAnX6m4QNwtryNbbNAGFiLJrPaE6mEb598m2%2BYsad84hxHK8%2BgBNOT4TbB6mxoliqPDvI955AVQQJLaiYtumGyhcsLEnIwRbeSS6qemaQMy66vhY92t8Jy...",
+         "server": "cloudflare",
+         "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+         "timing-allow-origin": "*",
+         "vary": "Accept-Encoding",
+         "x-cache": "HIT, MISS",
+         "~~~": "..."
+      },
+      "mimeType": "application/javascript",
+      "protocol": "h2",
+      "remoteIPAddress": "104.16.85.20",
+      "remotePort": 443,
+      "responseTime": 1.677663911856744e+12,
+      "securityDetails": {
+         "certificateId": 0,
+         "certificateTransparencyCompliance": "compliant",
+         "cipher": "AES_128_GCM",
+         "encryptedClientHello": false,
+         "issuer": "Cloudflare Inc ECC CA-3",
+         "keyExchange": "",
+         "keyExchangeGroup": "X25519",
+         "protocol": "TLS 1.3",
+         "sanList": [ "sni.cloudflaressl.com", "cdn.jsdelivr.net" ],
+         "serverSignatureAlgorithm": 1027,
+         "signedCertificateTimestampList": [ {
+            "hashAlgorithm": "SHA-256",
+            "logDescription": "Google 'Argon2023' log",
+            "logId": "E83ED0DA3EF5063532E75728BC896BC903D3CBD1116BECEB69E1777D6D06BD6E",
+            "origin": "Embedded in certificate",
+            "signatureAlgorithm": "ECDSA",
+            "signatureData": "30450220418207EE3EFDE2C987C6978FC47E784963A752AC41A093595935017C73FEFFD8022100C2CE705B693983993A2A66AC95CA581D608464ED60C72D7330AF7768F356B505",
+            "status": "Verified",
+            "timestamp": 1.654159216884e+12
+         }, {
+            "hashAlgorithm": "SHA-256",
+            "logDescription": "DigiCert Yeti2023 Log",
+            "logId": "35CF191BBFB16C57BF0FAD4C6D42CBBBB627202651EA3FE12AEFA803C33BD64C",
+            "origin": "Embedded in certificate",
+            "signatureAlgorithm": "ECDSA",
+            "signatureData": "304402202E93D7D35AA3DE4BEBA1117F65782E4F5959724CBA50579A81299979A69A0B5202207B6FF7259B65D5A7D05435BBC19A9A1A130DDEEBA29D920C5DED0A420A19E48E",
+            "status": "Verified",
+            "timestamp": 1.654159216943e+12
+         }, {
+            "hashAlgorithm": "SHA-256",
+            "logDescription": "Let's Encrypt 'Oak2023' log",
+            "logId": "B73EFB24DF9C4DBA75F239C5BA58F46C5DFC42CF7A9F35C49E1D098125EDB499",
+            "origin": "Embedded in certificate",
+            "signatureAlgorithm": "ECDSA",
+            "signatureData": "3045022100B82BFD59D89CD3D00BB0BFD9470E9857E5B24498A913BF4A13F2829026A8B13A0220412D3372983A381F6017AE4ED9FD13C32F50B04E1CAE7D09A8E3AB64108F0616",
+            "status": "Verified",
+            "timestamp": 1.654159216933e+12
+         } ],
+         "subjectName": "sni.cloudflaressl.com",
+         "validFrom": 1654128000,
+         "validTo": 1685663999
+      },
+      "securityState": "secure",
+      "status": 200,
+      "statusText": "",
+      "timing": {
+         "connectEnd": 119.809,
+         "connectStart": 53.701,
+         "dnsEnd": 53.701,
+         "dnsStart": 0.877,
+         "proxyEnd": -1,
+         "proxyStart": -1,
+         "pushEnd": 0,
+         "pushStart": 0,
+         "receiveHeadersEnd": 166.429,
+         "requestTime": 373225.349616,
+         "sendEnd": 120.133,
+         "sendStart": 119.983,
+         "sslEnd": 119.805,
+         "sslStart": 86.683,
+         "workerFetchStart": -1,
+         "workerReady": -1,
+         "workerRespondWithSettled": -1,
+         "workerStart": -1
+      },
+      "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+   },
+   "timestamp": 373225.517187,
+   "type": "Script"
+}
+[1677663911.870][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 3683,
+   "encodedDataLength": 0,
+   "requestId": "23560.2",
+   "timestamp": 373225.517236
+}
+[1677663911.870][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=27) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.870][DEBUG]: DevTools WebSocket Event: Network.responseReceivedExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "blockedCookies": [  ],
+   "headers": {
+      "Content-Length": "537706",
+      "Content-type": "image/jpeg",
+      "Date": "Wed, 01 Mar 2023 09:45:11 GMT",
+      "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+      "Server": "SimpleHTTP/0.6 Python/3.8.10"
+   },
+   "headersText": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.8.10\r\nDate: Wed, 01 Mar 2023 09:45:11 GMT\r\nContent-type: image/jpeg\r\nContent-Length: 537706\r\nLast-Modified: Wed, 01 Mar 2023 07:54:22 GMT\r\n\r\n",
+   "requestId": "23560.4",
+   "resourceIPAddressSpace": "Local",
+   "statusCode": 200
+}
+[1677663911.870][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=28) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Event: Network.responseReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasExtraInfo": true,
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "requestId": "23560.4",
+   "response": {
+      "alternateProtocolUsage": "unspecifiedReason",
+      "connectionId": 45,
+      "connectionReused": true,
+      "encodedDataLength": 190,
+      "fromDiskCache": false,
+      "fromPrefetchCache": false,
+      "fromServiceWorker": false,
+      "headers": {
+         "Content-Length": "537706",
+         "Content-type": "image/jpeg",
+         "Date": "Wed, 01 Mar 2023 09:45:11 GMT",
+         "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+         "Server": "SimpleHTTP/0.6 Python/3.8.10"
+      },
+      "mimeType": "image/jpeg",
+      "protocol": "http/1.0",
+      "remoteIPAddress": "127.0.0.1",
+      "remotePort": 8000,
+      "responseTime": 1.677663911859133e+12,
+      "securityState": "secure",
+      "status": 200,
+      "statusText": "OK",
+      "timing": {
+         "connectEnd": -1,
+         "connectStart": -1,
+         "dnsEnd": -1,
+         "dnsStart": -1,
+         "proxyEnd": -1,
+         "proxyStart": -1,
+         "pushEnd": 0,
+         "pushStart": 0,
+         "receiveHeadersEnd": 1.024,
+         "requestTime": 373225.517042,
+         "sendEnd": 0.241,
+         "sendStart": 0.187,
+         "sslEnd": -1,
+         "sslStart": -1,
+         "workerFetchStart": -1,
+         "workerReady": -1,
+         "workerRespondWithSettled": -1,
+         "workerStart": -1
+      },
+      "url": "http://localhost:8000/test.jpg"
+   },
+   "timestamp": 373225.518469,
+   "type": "Image"
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 131072,
+   "encodedDataLength": 0,
+   "requestId": "23560.4",
+   "timestamp": 373225.518513
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 0,
+   "requestId": "23560.4",
+   "timestamp": 373225.518704
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 0,
+   "requestId": "23560.4",
+   "timestamp": 373225.518752
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=28) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 327680,
+   "requestId": "23560.4",
+   "timestamp": 373225.518883
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=29) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 65536,
+   "requestId": "23560.4",
+   "timestamp": 373225.519073
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 65536,
+   "requestId": "23560.4",
+   "timestamp": 373225.519146
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 0,
+   "requestId": "23560.4",
+   "timestamp": 373225.519204
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=29) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 13418,
+   "encodedDataLength": 78954,
+   "requestId": "23560.4",
+   "timestamp": 373225.519437
+}
+[1677663911.871][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=30) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.872][DEBUG]: DevTools WebSocket Event: Network.loadingFinished (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "encodedDataLength": 537896,
+   "requestId": "23560.4",
+   "shouldReportCorbBlocking": false,
+   "timestamp": 373225.519283
+}
+[1677663911.872][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=30) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.874][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 10204,
+   "encodedDataLength": 4229,
+   "requestId": "23560.2",
+   "timestamp": 373225.521778
+}
+[1677663911.874][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=31) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.874][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=31) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.883][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 93821,
+   "encodedDataLength": 33360,
+   "requestId": "23560.2",
+   "timestamp": 373225.530575
+}
+[1677663911.883][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=32) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.883][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=32) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.885][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 43132,
+   "encodedDataLength": 12687,
+   "requestId": "23560.2",
+   "timestamp": 373225.532949
+}
+[1677663911.885][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=33) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.885][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=33) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.889][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 87656,
+   "encodedDataLength": 24346,
+   "requestId": "23560.2",
+   "timestamp": 373225.536987
+}
+[1677663911.889][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=34) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.889][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=34) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.893][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 118064,
+   "encodedDataLength": 28575,
+   "requestId": "23560.2",
+   "timestamp": 373225.541085
+}
+[1677663911.893][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=35) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.893][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=35) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.897][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 27085,
+   "encodedDataLength": 8458,
+   "requestId": "23560.2",
+   "timestamp": 373225.544989
+}
+[1677663911.897][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=36) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.897][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=36) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.907][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 131343,
+   "encodedDataLength": 37033,
+   "requestId": "23560.2",
+   "timestamp": 373225.550705
+}
+[1677663911.907][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 12398,
+   "encodedDataLength": 0,
+   "requestId": "23560.2",
+   "timestamp": 373225.553011
+}
+[1677663911.907][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=37) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.907][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 48647,
+   "requestId": "23560.2",
+   "timestamp": 373225.555369
+}
+[1677663911.908][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=37) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.909][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 181204,
+   "encodedDataLength": 0,
+   "requestId": "23560.2",
+   "timestamp": 373225.556481
+}
+[1677663911.909][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=38) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.909][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=38) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.911][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 130945,
+   "encodedDataLength": 61415,
+   "requestId": "23560.2",
+   "timestamp": 373225.55917
+}
+[1677663911.911][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=39) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.912][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=39) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.913][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 125712,
+   "encodedDataLength": 0,
+   "requestId": "23560.2",
+   "timestamp": 373225.561317
+}
+[1677663911.913][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=40) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.914][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=40) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.920][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 131072,
+   "encodedDataLength": 32796,
+   "requestId": "23560.2",
+   "timestamp": 373225.56818
+}
+[1677663911.920][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=41) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.922][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=41) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.922][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 20036,
+   "encodedDataLength": 0,
+   "requestId": "23560.2",
+   "timestamp": 373225.569859
+}
+[1677663911.922][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=42) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.923][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=42) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.923][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 27199,
+   "requestId": "23560.2",
+   "timestamp": 373225.571318
+}
+[1677663911.923][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=43) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.924][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=43) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.924][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 62476,
+   "encodedDataLength": 0,
+   "requestId": "23560.2",
+   "timestamp": 373225.572036
+}
+[1677663911.924][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=44) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663911.924][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=44) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663911.939][DEBUG]: DevTools WebSocket Event: Network.loadingFinished (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "encodedDataLength": 321483,
+   "requestId": "23560.2",
+   "shouldReportCorbBlocking": false,
+   "timestamp": 373225.571302
+}
+[1677663911.939][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=45) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663912.013][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=45) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663912.020][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSent (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "documentURL": "http://localhost:8000/",
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasUserGesture": false,
+   "initiator": {
+      "stack": {
+         "callFrames": [ {
+            "columnNumber": 27,
+            "functionName": "instantiateAsync",
+            "lineNumber": 6687,
+            "scriptId": "8",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"
+         }, {
+            "columnNumber": 18,
+            "functionName": "createWasm",
+            "lineNumber": 6700,
+            "scriptId": "8",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"
+         }, {
+            "columnNumber": 16,
+            "functionName": "",
+            "lineNumber": 6772,
+            "scriptId": "8",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"
+         }, {
+            "columnNumber": 43,
+            "functionName": "",
+            "lineNumber": 7218,
+            "scriptId": "8",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"
+         }, {
+            "columnNumber": 46,
+            "functionName": "",
+            "lineNumber": 7165,
+            "scriptId": "8",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"
+         }, {
+            "columnNumber": 30,
+            "functionName": "step",
+            "lineNumber": 149,
+            "scriptId": "8",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"
+         }, {
+            "columnNumber": 56,
+            "functionName": "",
+            "lineNumber": 98,
+            "scriptId": "8",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"
+         }, {
+            "columnNumber": 31,
+            "functionName": "fulfilled",
+            "lineNumber": 79,
+            "scriptId": "8",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js"
+         } ]
+      },
+      "type": "script"
+   },
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "redirectHasExtraInfo": false,
+   "request": {
+      "headers": {
+         "Referer": "http://localhost:8000/",
+         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+         "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+         "sec-ch-ua-mobile": "?0",
+         "sec-ch-ua-platform": "\"Windows\""
+      },
+      "initialPriority": "High",
+      "isSameSite": false,
+      "method": "GET",
+      "mixedContentType": "none",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tfjs-backend-wasm-simd.wasm"
+   },
+   "requestId": "23560.8",
+   "timestamp": 373225.666694,
+   "type": "Fetch",
+   "wallTime": 1677663912.019369
+}
+[1677663912.021][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=46) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663912.029][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "timestamp": 373225.67608
+}
+[1677663912.029][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=47) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true
+}
+[1677663912.029][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60"
+}
+[1677663912.029][DEBUG]: DevTools WebSocket Event: DOM.documentUpdated (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663912.029][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "timestamp": 373225.676247
+}
+[1677663912.029][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=46) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663912.030][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=47) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1677663912.030][INFO]: Done waiting for pending navigations. Status: ok
+[1677663912.030][INFO]: [0f0d9a585e8f3926cd8ad18a8562a517] RESPONSE Navigate
+[1677663912.030][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSent (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "documentURL": "http://localhost:8000/",
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasUserGesture": false,
+   "initiator": {
+      "type": "other"
+   },
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "redirectHasExtraInfo": false,
+   "request": {
+      "headers": {
+         "Referer": "http://localhost:8000/",
+         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+         "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+         "sec-ch-ua-mobile": "?0",
+         "sec-ch-ua-platform": "\"Windows\""
+      },
+      "initialPriority": "High",
+      "isSameSite": true,
+      "method": "GET",
+      "mixedContentType": "none",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "url": "http://localhost:8000/favicon.ico"
+   },
+   "requestId": "23560.9",
+   "timestamp": 373225.678202,
+   "type": "Other",
+   "wallTime": 1677663912.029614
+}
+[1677663912.031][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSentExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "associatedCookies": [  ],
+   "clientSecurityState": {
+      "initiatorIPAddressSpace": "Local",
+      "initiatorIsSecureContext": true,
+      "privateNetworkRequestPolicy": "PreflightWarn"
+   },
+   "connectTiming": {
+      "requestTime": 373225.678483
+   },
+   "headers": {
+      "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Connection": "keep-alive",
+      "Host": "localhost:8000",
+      "Referer": "http://localhost:8000/",
+      "Sec-Fetch-Dest": "image",
+      "Sec-Fetch-Mode": "no-cors",
+      "Sec-Fetch-Site": "same-origin",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+   },
+   "requestId": "23560.9"
+}
+[1677663912.031][INFO]: [0f0d9a585e8f3926cd8ad18a8562a517] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return window.performance.getEntries();"
+}
+[1677663912.031][INFO]: Waiting for pending navigations...
+[1677663912.031][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=48) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663912.032][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=48) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663912.032][INFO]: Done waiting for pending navigations. Status: ok
+[1677663912.032][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=49) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "awaitPromise": true,
+   "expression": "(function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebDriver status codes....",
+   "returnByValue": true
+}
+[1677663912.032][DEBUG]: DevTools WebSocket Event: Network.responseReceivedExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "blockedCookies": [  ],
+   "headers": {
+      "Connection": "close",
+      "Content-Length": "469",
+      "Content-Type": "text/html;charset=utf-8",
+      "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+      "Server": "SimpleHTTP/0.6 Python/3.8.10"
+   },
+   "headersText": "HTTP/1.0 404 File not found\r\nServer: SimpleHTTP/0.6 Python/3.8.10\r\nDate: Wed, 01 Mar 2023 09:45:12 GMT\r\nConnection: close\r\nContent-Type: text/html;charset=utf-8\r\nContent-Length: 469\r\n\r\n",
+   "requestId": "23560.9",
+   "resourceIPAddressSpace": "Local",
+   "statusCode": 404
+}
+[1677663912.033][DEBUG]: DevTools WebSocket Event: Network.responseReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasExtraInfo": true,
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "requestId": "23560.9",
+   "response": {
+      "alternateProtocolUsage": "unspecifiedReason",
+      "connectionId": 67,
+      "connectionReused": true,
+      "encodedDataLength": 185,
+      "fromDiskCache": false,
+      "fromPrefetchCache": false,
+      "fromServiceWorker": false,
+      "headers": {
+         "Connection": "close",
+         "Content-Length": "469",
+         "Content-Type": "text/html;charset=utf-8",
+         "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+         "Server": "SimpleHTTP/0.6 Python/3.8.10"
+      },
+      "mimeType": "text/html",
+      "protocol": "http/1.0",
+      "remoteIPAddress": "127.0.0.1",
+      "remotePort": 8000,
+      "responseTime": 1.677663912021117e+12,
+      "securityState": "secure",
+      "status": 404,
+      "statusText": "File not found",
+      "timing": {
+         "connectEnd": -1,
+         "connectStart": -1,
+         "dnsEnd": -1,
+         "dnsStart": -1,
+         "proxyEnd": -1,
+         "proxyStart": -1,
+         "pushEnd": 0,
+         "pushStart": 0,
+         "receiveHeadersEnd": 1.579,
+         "requestTime": 373225.678483,
+         "sendEnd": 0.273,
+         "sendStart": 0.225,
+         "sslEnd": -1,
+         "sslStart": -1,
+         "workerFetchStart": -1,
+         "workerReady": -1,
+         "workerRespondWithSettled": -1,
+         "workerStart": -1
+      },
+      "url": "http://localhost:8000/favicon.ico"
+   },
+   "timestamp": 373225.680431,
+   "type": "Other"
+}
+[1677663912.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "23560.9",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)",
+      "timestamp": 1.677663912031841e+12,
+      "url": "http://localhost:8000/favicon.ico"
+   }
+}
+[1677663912.033][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 469,
+   "encodedDataLength": 0,
+   "requestId": "23560.9",
+   "timestamp": 373225.680515
+}
+[1677663912.033][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 0,
+   "encodedDataLength": 469,
+   "requestId": "23560.9",
+   "timestamp": 373225.680651
+}
+[1677663912.033][DEBUG]: DevTools WebSocket Event: Network.loadingFinished (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "encodedDataLength": 654,
+   "requestId": "23560.9",
+   "shouldReportCorbBlocking": false,
+   "timestamp": 373225.680336
+}
+[1677663912.034][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=49) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "type": "object",
+      "value": {
+         "status": 0,
+         "value": [ {
+            "activationStart": 0,
+            "connectEnd": 302.5,
+            "connectStart": 1.600000023841858,
+            "decodedBodySize": 41445,
+            "domComplete": 636.7000000476837,
+            "domContentLoadedEventEnd": 636.5,
+            "domContentLoadedEventStart": 636.5,
+            "domInteractive": 636.5,
+            "domainLookupEnd": 1.600000023841858,
+            "domainLookupStart": 1.600000023841858,
+            "duration": 636.7000000476837,
+            "encodedBodySize": 41445,
+            "entryType": "navigation",
+            "fetchStart": 0.9000000357627869,
+            "initiatorType": "navigation",
+            "loadEventEnd": 636.7000000476837,
+            "loadEventStart": 636.7000000476837,
+            "name": "http://localhost:8000/",
+            "nextHopProtocol": "http/1.0",
+            "~~~": "..."
+         }, {
+            "connectEnd": 430,
+            "connectStart": 364,
+            "decodedBodySize": 1309903,
+            "domainLookupEnd": 364,
+            "domainLookupStart": 311.10000002384186,
+            "duration": 222,
+            "encodedBodySize": 320782,
+            "entryType": "resource",
+            "fetchStart": 309.9000000357628,
+            "initiatorType": "script",
+            "name": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest",
+            "nextHopProtocol": "h2",
+            "redirectEnd": 0,
+            "redirectStart": 0,
+            "renderBlockingStatus": "blocking",
+            "requestStart": 430.2000000476837,
+            "responseEnd": 531.9000000357628,
+            "responseStart": 476.2000000476837,
+            "responseStatus": 0,
+            "~~~": "..."
+         }, {
+            "connectEnd": 310.10000002384186,
+            "connectStart": 310.10000002384186,
+            "decodedBodySize": 381691,
+            "domainLookupEnd": 310.10000002384186,
+            "domainLookupStart": 310.10000002384186,
+            "duration": 166.30000001192093,
+            "encodedBodySize": 48775,
+            "entryType": "resource",
+            "fetchStart": 310.10000002384186,
+            "initiatorType": "script",
+            "name": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js",
+            "nextHopProtocol": "h2",
+            "redirectEnd": 0,
+            "redirectStart": 0,
+            "renderBlockingStatus": "blocking",
+            "requestStart": 430.30000001192093,
+            "responseEnd": 476.4000000357628,
+            "responseStart": 460.80000001192093,
+            "responseStatus": 0,
+            "~~~": "..."
+         }, {
+            "connectEnd": 310.4000000357628,
+            "connectStart": 310.4000000357628,
+            "decodedBodySize": 537706,
+            "domainLookupEnd": 310.4000000357628,
+            "domainLookupStart": 310.4000000357628,
+            "duration": 169.5,
+            "encodedBodySize": 537706,
+            "entryType": "resource",
+            "fetchStart": 310.4000000357628,
+            "initiatorType": "img",
+            "name": "http://localhost:8000/test.jpg",
+            "nextHopProtocol": "http/1.0",
+            "redirectEnd": 0,
+            "redirectStart": 0,
+            "renderBlockingStatus": "non-blocking",
+            "requestStart": 477.9000000357628,
+            "responseEnd": 479.9000000357628,
+            "responseStart": 478.60000002384186,
+            "responseStatus": 200,
+            "~~~": "..."
+         }, {
+            "duration": 0,
+            "entryType": "paint",
+            "name": "first-paint",
+            "startTime": 636.5,
+            "toJSON": {
+            }
+         }, {
+            "duration": 0,
+            "entryType": "paint",
+            "name": "first-contentful-paint",
+            "startTime": 636.5,
+            "toJSON": {
+            }
+         }, {
+            "connectEnd": 638.8000000119209,
+            "connectStart": 638.8000000119209,
+            "decodedBodySize": 469,
+            "domainLookupEnd": 638.8000000119209,
+            "domainLookupStart": 638.8000000119209,
+            "duration": 2.100000023841858,
+            "encodedBodySize": 469,
+            "entryType": "resource",
+            "fetchStart": 638.8000000119209,
+            "initiatorType": "other",
+            "name": "http://localhost:8000/favicon.ico",
+            "nextHopProtocol": "http/1.0",
+            "redirectEnd": 0,
+            "redirectStart": 0,
+            "renderBlockingStatus": "non-blocking",
+            "requestStart": 639.3000000119209,
+            "responseEnd": 640.9000000357628,
+            "responseStart": 640.6000000238419,
+            "responseStatus": 404,
+            "~~~": "..."
+         } ]
+      }
+   }
+}
+[1677663912.034][INFO]: Waiting for pending navigations...
+[1677663912.034][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=50) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "expression": "1"
+}
+[1677663912.034][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=50) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663912.034][INFO]: Done waiting for pending navigations. Status: ok
+[1677663912.034][INFO]: [0f0d9a585e8f3926cd8ad18a8562a517] RESPONSE ExecuteScript [ {
+   "activationStart": 0,
+   "connectEnd": 302.5,
+   "connectStart": 1.600000023841858,
+   "decodedBodySize": 41445,
+   "domComplete": 636.7000000476837,
+   "domContentLoadedEventEnd": 636.5,
+   "domContentLoadedEventStart": 636.5,
+   "domInteractive": 636.5,
+   "domainLookupEnd": 1.600000023841858,
+   "domainLookupStart": 1.600000023841858,
+   "duration": 636.7000000476837,
+   "encodedBodySize": 41445,
+   "entryType": "navigation",
+   "fetchStart": 0.9000000357627869,
+   "initiatorType": "navigation",
+   "loadEventEnd": 636.7000000476837,
+   "loadEventStart": 636.7000000476837,
+   "name": "http://localhost:8000/",
+   "nextHopProtocol": "http/1.0",
+   "~~~": "..."
+}, {
+   "connectEnd": 430,
+   "connectStart": 364,
+   "decodedBodySize": 1309903,
+   "domainLookupEnd": 364,
+   "domainLookupStart": 311.10000002384186,
+   "duration": 222,
+   "encodedBodySize": 320782,
+   "entryType": "resource",
+   "fetchStart": 309.9000000357628,
+   "initiatorType": "script",
+   "name": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest",
+   "nextHopProtocol": "h2",
+   "redirectEnd": 0,
+   "redirectStart": 0,
+   "renderBlockingStatus": "blocking",
+   "requestStart": 430.2000000476837,
+   "responseEnd": 531.9000000357628,
+   "responseStart": 476.2000000476837,
+   "responseStatus": 0,
+   "~~~": "..."
+}, {
+   "connectEnd": 310.10000002384186,
+   "connectStart": 310.10000002384186,
+   "decodedBodySize": 381691,
+   "domainLookupEnd": 310.10000002384186,
+   "domainLookupStart": 310.10000002384186,
+   "duration": 166.30000001192093,
+   "encodedBodySize": 48775,
+   "entryType": "resource",
+   "fetchStart": 310.10000002384186,
+   "initiatorType": "script",
+   "name": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tf-backend-wasm.js",
+   "nextHopProtocol": "h2",
+   "redirectEnd": 0,
+   "redirectStart": 0,
+   "renderBlockingStatus": "blocking",
+   "requestStart": 430.30000001192093,
+   "responseEnd": 476.4000000357628,
+   "responseStart": 460.80000001192093,
+   "responseStatus": 0,
+   "~~~": "..."
+}, {
+   "connectEnd": 310.4000000357628,
+   "connectStart": 310.4000000357628,
+   "decodedBodySize": 537706,
+   "domainLookupEnd": 310.4000000357628,
+   "domainLookupStart": 310.4000000357628,
+   "duration": 169.5,
+   "encodedBodySize": 537706,
+   "entryType": "resource",
+   "fetchStart": 310.4000000357628,
+   "initiatorType": "img",
+   "name": "http://localhost:8000/test.jpg",
+   "nextHopProtocol": "http/1.0",
+   "redirectEnd": 0,
+   "redirectStart": 0,
+   "renderBlockingStatus": "non-blocking",
+   "requestStart": 477.9000000357628,
+   "responseEnd": 479.9000000357628,
+   "responseStart": 478.60000002384186,
+   "responseStatus": 200,
+   "~~~": "..."
+}, {
+   "duration": 0,
+   "entryType": "paint",
+   "name": "first-paint",
+   "startTime": 636.5,
+   "toJSON": {
+   }
+}, {
+   "duration": 0,
+   "entryType": "paint",
+   "name": "first-contentful-paint",
+   "startTime": 636.5,
+   "toJSON": {
+   }
+}, {
+   "connectEnd": 638.8000000119209,
+   "connectStart": 638.8000000119209,
+   "decodedBodySize": 469,
+   "domainLookupEnd": 638.8000000119209,
+   "domainLookupStart": 638.8000000119209,
+   "duration": 2.100000023841858,
+   "encodedBodySize": 469,
+   "entryType": "resource",
+   "fetchStart": 638.8000000119209,
+   "initiatorType": "other",
+   "name": "http://localhost:8000/favicon.ico",
+   "nextHopProtocol": "http/1.0",
+   "redirectEnd": 0,
+   "redirectStart": 0,
+   "renderBlockingStatus": "non-blocking",
+   "requestStart": 639.3000000119209,
+   "responseEnd": 640.9000000357628,
+   "responseStart": 640.6000000238419,
+   "responseStatus": 404,
+   "~~~": "..."
+} ]
+[1677663912.042][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+}
+[1677663912.077][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSentExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "associatedCookies": [  ],
+   "clientSecurityState": {
+      "initiatorIPAddressSpace": "Local",
+      "initiatorIsSecureContext": true,
+      "privateNetworkRequestPolicy": "PreflightWarn"
+   },
+   "connectTiming": {
+      "requestTime": 373225.668253
+   },
+   "headers": {
+      ":authority": "cdn.jsdelivr.net",
+      ":method": "GET",
+      ":path": "/npm/@tensorflow/tfjs-backend-wasm/dist/tfjs-backend-wasm-simd.wasm",
+      ":scheme": "https",
+      "accept": "*/*",
+      "accept-encoding": "gzip, deflate, br",
+      "accept-language": "en-US,en;q=0.9",
+      "origin": "http://localhost:8000",
+      "referer": "http://localhost:8000/",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "cross-site",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
+   },
+   "requestId": "23560.8"
+}
+[1677663912.141][DEBUG]: DevTools WebSocket Event: Network.responseReceivedExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "blockedCookies": [  ],
+   "headers": {
+      "access-control-allow-origin": "*",
+      "access-control-expose-headers": "*",
+      "age": "33299",
+      "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+      "cache-control": "public, max-age=604800, s-maxage=43200",
+      "cf-cache-status": "HIT",
+      "cf-ray": "7a10773df9e12a9a-LAX",
+      "content-encoding": "br",
+      "content-type": "application/wasm",
+      "cross-origin-resource-policy": "cross-origin",
+      "date": "Wed, 01 Mar 2023 09:45:12 GMT",
+      "etag": "W/\"5eb1c-cmzM/XBR3XzLLINXH/PpmcF713A\"",
+      "nel": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+      "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JOl2ZZ4%2BttJ9ta4n5bWN0hJbjB1hH4PHEY8ws%2FAf1yT37Zye6G%2B%2FZiTLmC5mw%2FzeJ1%2F5vjYIYboM2RCV82FOoSORRPV3RFN76Ojd81atKpuY7tZjjBX5Tc...",
+      "server": "cloudflare",
+      "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+      "timing-allow-origin": "*",
+      "vary": "Accept-Encoding",
+      "x-cache": "HIT, MISS",
+      "~~~": "..."
+   },
+   "requestId": "23560.8",
+   "resourceIPAddressSpace": "Public",
+   "statusCode": 200
+}
+[1677663912.142][DEBUG]: DevTools WebSocket Event: Network.responseReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasExtraInfo": true,
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "requestId": "23560.8",
+   "response": {
+      "alternateProtocolUsage": "alternativeJobWonRace",
+      "connectionId": 0,
+      "connectionReused": false,
+      "encodedDataLength": 706,
+      "fromDiskCache": false,
+      "fromPrefetchCache": false,
+      "fromServiceWorker": false,
+      "headers": {
+         "access-control-allow-origin": "*",
+         "access-control-expose-headers": "*",
+         "age": "33299",
+         "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400",
+         "cache-control": "public, max-age=604800, s-maxage=43200",
+         "cf-cache-status": "HIT",
+         "cf-ray": "7a10773df9e12a9a-LAX",
+         "content-encoding": "br",
+         "content-type": "application/wasm",
+         "cross-origin-resource-policy": "cross-origin",
+         "date": "Wed, 01 Mar 2023 09:45:12 GMT",
+         "etag": "W/\"5eb1c-cmzM/XBR3XzLLINXH/PpmcF713A\"",
+         "nel": "{\"success_fraction\":0.01,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+         "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=JOl2ZZ4%2BttJ9ta4n5bWN0hJbjB1hH4PHEY8ws%2FAf1yT37Zye6G%2B%2FZiTLmC5mw%2FzeJ1%2F5vjYIYboM2RCV82FOoSORRPV3RFN76Ojd81atKpuY7tZjjBX5Tc...",
+         "server": "cloudflare",
+         "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+         "timing-allow-origin": "*",
+         "vary": "Accept-Encoding",
+         "x-cache": "HIT, MISS",
+         "~~~": "..."
+      },
+      "mimeType": "application/wasm",
+      "protocol": "h3",
+      "remoteIPAddress": "104.16.85.20",
+      "remotePort": 443,
+      "responseTime": 1.677663912130211e+12,
+      "securityDetails": {
+         "certificateId": 0,
+         "certificateTransparencyCompliance": "compliant",
+         "cipher": "AES_128_GCM",
+         "encryptedClientHello": false,
+         "issuer": "Cloudflare Inc ECC CA-3",
+         "keyExchange": "",
+         "keyExchangeGroup": "X25519",
+         "protocol": "QUIC",
+         "sanList": [ "sni.cloudflaressl.com", "cdn.jsdelivr.net" ],
+         "serverSignatureAlgorithm": 1027,
+         "signedCertificateTimestampList": [ {
+            "hashAlgorithm": "SHA-256",
+            "logDescription": "Google 'Argon2023' log",
+            "logId": "E83ED0DA3EF5063532E75728BC896BC903D3CBD1116BECEB69E1777D6D06BD6E",
+            "origin": "Embedded in certificate",
+            "signatureAlgorithm": "ECDSA",
+            "signatureData": "30450220418207EE3EFDE2C987C6978FC47E784963A752AC41A093595935017C73FEFFD8022100C2CE705B693983993A2A66AC95CA581D608464ED60C72D7330AF7768F356B505",
+            "status": "Verified",
+            "timestamp": 1.654159216884e+12
+         }, {
+            "hashAlgorithm": "SHA-256",
+            "logDescription": "DigiCert Yeti2023 Log",
+            "logId": "35CF191BBFB16C57BF0FAD4C6D42CBBBB627202651EA3FE12AEFA803C33BD64C",
+            "origin": "Embedded in certificate",
+            "signatureAlgorithm": "ECDSA",
+            "signatureData": "304402202E93D7D35AA3DE4BEBA1117F65782E4F5959724CBA50579A81299979A69A0B5202207B6FF7259B65D5A7D05435BBC19A9A1A130DDEEBA29D920C5DED0A420A19E48E",
+            "status": "Verified",
+            "timestamp": 1.654159216943e+12
+         }, {
+            "hashAlgorithm": "SHA-256",
+            "logDescription": "Let's Encrypt 'Oak2023' log",
+            "logId": "B73EFB24DF9C4DBA75F239C5BA58F46C5DFC42CF7A9F35C49E1D098125EDB499",
+            "origin": "Embedded in certificate",
+            "signatureAlgorithm": "ECDSA",
+            "signatureData": "3045022100B82BFD59D89CD3D00BB0BFD9470E9857E5B24498A913BF4A13F2829026A8B13A0220412D3372983A381F6017AE4ED9FD13C32F50B04E1CAE7D09A8E3AB64108F0616",
+            "status": "Verified",
+            "timestamp": 1.654159216933e+12
+         } ],
+         "subjectName": "sni.cloudflaressl.com",
+         "validFrom": 1654128000,
+         "validTo": 1685663999
+      },
+      "securityState": "secure",
+      "status": 200,
+      "statusText": "",
+      "timing": {
+         "connectEnd": 56.267,
+         "connectStart": 0.815,
+         "dnsEnd": 0.424,
+         "dnsStart": 0.408,
+         "proxyEnd": -1,
+         "proxyStart": -1,
+         "pushEnd": 0,
+         "pushStart": 0,
+         "receiveHeadersEnd": 120.993,
+         "requestTime": 373225.668253,
+         "sendEnd": 56.475,
+         "sendStart": 56.348,
+         "sslEnd": 56.267,
+         "sslStart": 0.815,
+         "workerFetchStart": -1,
+         "workerReady": -1,
+         "workerRespondWithSettled": -1,
+         "workerStart": -1
+      },
+      "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm/dist/tfjs-backend-wasm-simd.wasm"
+   },
+   "timestamp": 373225.789686,
+   "type": "Fetch"
+}
+[1677663912.142][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 18725,
+   "encodedDataLength": 10424,
+   "requestId": "23560.8",
+   "timestamp": 373225.79005
+}
+[1677663912.153][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 29573,
+   "encodedDataLength": 9392,
+   "requestId": "23560.8",
+   "timestamp": 373225.801055
+}
+[1677663912.154][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 47740,
+   "encodedDataLength": 14088,
+   "requestId": "23560.8",
+   "timestamp": 373225.801921
+}
+[1677663912.174][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 104033,
+   "encodedDataLength": 29350,
+   "requestId": "23560.8",
+   "timestamp": 373225.822052
+}
+[1677663912.175][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 3107,
+   "encodedDataLength": 1174,
+   "requestId": "23560.8",
+   "timestamp": 373225.822639
+}
+[1677663912.177][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 16438,
+   "encodedDataLength": 5870,
+   "requestId": "23560.8",
+   "timestamp": 373225.82517
+}
+[1677663912.198][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 131072,
+   "encodedDataLength": 32780,
+   "requestId": "23560.8",
+   "timestamp": 373225.845118
+}
+[1677663912.198][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 35300,
+   "encodedDataLength": 0,
+   "requestId": "23560.8",
+   "timestamp": 373225.845558
+}
+[1677663912.201][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 1880,
+   "encodedDataLength": 13500,
+   "requestId": "23560.8",
+   "timestamp": 373225.848833
+}
+[1677663912.207][DEBUG]: DevTools WebSocket Event: Network.loadingFinished (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "encodedDataLength": 117284,
+   "requestId": "23560.8",
+   "shouldReportCorbBlocking": false,
+   "timestamp": 373225.848647
+}
+[1677663912.207][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSent (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "documentURL": "http://localhost:8000/",
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasUserGesture": false,
+   "initiator": {
+      "stack": {
+         "callFrames": [ {
+            "columnNumber": 211267,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 211170,
+            "functionName": "t",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 360567,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113036,
+            "functionName": "l",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 112789,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113399,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118276,
+            "functionName": "Nv",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118480,
+            "functionName": "o",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118541,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118420,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 361781,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 792185,
+            "functionName": "t.load",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 798888,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113036,
+            "functionName": "l",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 112789,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113399,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118276,
+            "functionName": "Nv",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118480,
+            "functionName": "o",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118541,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, "..." ]
+      },
+      "type": "script"
+   },
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "redirectHasExtraInfo": false,
+   "request": {
+      "headers": {
+         "Referer": "http://localhost:8000/",
+         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+         "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+         "sec-ch-ua-mobile": "?0",
+         "sec-ch-ua-platform": "\"Windows\""
+      },
+      "initialPriority": "High",
+      "isSameSite": true,
+      "method": "GET",
+      "mixedContentType": "none",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "url": "http://localhost:8000/models/imagenet_mobilenet_v1_100_224_classification/model.json?tfjs-format=file"
+   },
+   "requestId": "23560.10",
+   "timestamp": 373225.851867,
+   "type": "Fetch",
+   "wallTime": 1677663912.205668
+}
+[1677663912.513][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSentExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "associatedCookies": [  ],
+   "clientSecurityState": {
+      "initiatorIPAddressSpace": "Local",
+      "initiatorIsSecureContext": true,
+      "privateNetworkRequestPolicy": "PreflightWarn"
+   },
+   "connectTiming": {
+      "requestTime": 373225.854532
+   },
+   "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Connection": "keep-alive",
+      "Host": "localhost:8000",
+      "Referer": "http://localhost:8000/",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+   },
+   "requestId": "23560.10"
+}
+[1677663912.514][DEBUG]: DevTools WebSocket Event: Network.responseReceivedExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "blockedCookies": [  ],
+   "headers": {
+      "Content-Length": "47373",
+      "Content-type": "application/json",
+      "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+      "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+      "Server": "SimpleHTTP/0.6 Python/3.8.10"
+   },
+   "headersText": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.8.10\r\nDate: Wed, 01 Mar 2023 09:45:12 GMT\r\nContent-type: application/json\r\nContent-Length: 47373\r\nLast-Modified: Wed, 01 Mar 2023 07:54:22 GMT\r\n\r\n",
+   "requestId": "23560.10",
+   "resourceIPAddressSpace": "Local",
+   "statusCode": 200
+}
+[1677663912.515][DEBUG]: DevTools WebSocket Event: Network.responseReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasExtraInfo": true,
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "requestId": "23560.10",
+   "response": {
+      "alternateProtocolUsage": "unspecifiedReason",
+      "connectionId": 92,
+      "connectionReused": false,
+      "encodedDataLength": 195,
+      "fromDiskCache": false,
+      "fromPrefetchCache": false,
+      "fromServiceWorker": false,
+      "headers": {
+         "Content-Length": "47373",
+         "Content-type": "application/json",
+         "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+         "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+         "Server": "SimpleHTTP/0.6 Python/3.8.10"
+      },
+      "mimeType": "application/json",
+      "protocol": "http/1.0",
+      "remoteIPAddress": "127.0.0.1",
+      "remotePort": 8000,
+      "responseTime": 1.677663912503327e+12,
+      "securityState": "secure",
+      "status": 200,
+      "statusText": "OK",
+      "timing": {
+         "connectEnd": 306.448,
+         "connectStart": 0.172,
+         "dnsEnd": 0.172,
+         "dnsStart": 0.168,
+         "proxyEnd": -1,
+         "proxyStart": -1,
+         "pushEnd": 0,
+         "pushStart": 0,
+         "receiveHeadersEnd": 307.744,
+         "requestTime": 373225.854532,
+         "sendEnd": 306.558,
+         "sendStart": 306.494,
+         "sslEnd": -1,
+         "sslStart": -1,
+         "workerFetchStart": -1,
+         "workerReady": -1,
+         "workerRespondWithSettled": -1,
+         "workerStart": -1
+      },
+      "url": "http://localhost:8000/models/imagenet_mobilenet_v1_100_224_classification/model.json?tfjs-format=file"
+   },
+   "timestamp": 373226.162646,
+   "type": "Fetch"
+}
+[1677663912.515][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 47373,
+   "encodedDataLength": 47373,
+   "requestId": "23560.10",
+   "timestamp": 373226.162878
+}
+[1677663912.515][DEBUG]: DevTools WebSocket Event: Network.loadingFinished (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "encodedDataLength": 47568,
+   "requestId": "23560.10",
+   "shouldReportCorbBlocking": false,
+   "timestamp": 373226.162554
+}
+[1677663912.518][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSent (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "documentURL": "http://localhost:8000/",
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasUserGesture": false,
+   "initiator": {
+      "stack": {
+         "callFrames": [ {
+            "columnNumber": 211267,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 211170,
+            "functionName": "t",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355810,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355786,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113036,
+            "functionName": "l",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 112789,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113399,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118276,
+            "functionName": "Nv",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118480,
+            "functionName": "o",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118541,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118420,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 356359,
+            "functionName": "NR",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355547,
+            "functionName": "kR",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 362415,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113036,
+            "functionName": "l",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 112789,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113399,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118276,
+            "functionName": "Nv",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118480,
+            "functionName": "o",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, "..." ]
+      },
+      "type": "script"
+   },
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "redirectHasExtraInfo": false,
+   "request": {
+      "headers": {
+         "Referer": "http://localhost:8000/",
+         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+         "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+         "sec-ch-ua-mobile": "?0",
+         "sec-ch-ua-platform": "\"Windows\""
+      },
+      "initialPriority": "High",
+      "isSameSite": true,
+      "method": "GET",
+      "mixedContentType": "none",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "url": "http://localhost:8000/models/imagenet_mobilenet_v1_100_224_classification/group1-shard1of5.bin?tfjs-format=file"
+   },
+   "requestId": "23560.11",
+   "timestamp": 373226.163738,
+   "type": "Fetch",
+   "wallTime": 1677663912.515366
+}
+[1677663912.518][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSent (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "documentURL": "http://localhost:8000/",
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasUserGesture": false,
+   "initiator": {
+      "stack": {
+         "callFrames": [ {
+            "columnNumber": 211267,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 211170,
+            "functionName": "t",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355810,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355786,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113036,
+            "functionName": "l",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 112789,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113399,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118276,
+            "functionName": "Nv",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118480,
+            "functionName": "o",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118541,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118420,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 356359,
+            "functionName": "NR",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355547,
+            "functionName": "kR",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 362415,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113036,
+            "functionName": "l",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 112789,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113399,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118276,
+            "functionName": "Nv",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118480,
+            "functionName": "o",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, "..." ]
+      },
+      "type": "script"
+   },
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "redirectHasExtraInfo": false,
+   "request": {
+      "headers": {
+         "Referer": "http://localhost:8000/",
+         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+         "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+         "sec-ch-ua-mobile": "?0",
+         "sec-ch-ua-platform": "\"Windows\""
+      },
+      "initialPriority": "High",
+      "isSameSite": true,
+      "method": "GET",
+      "mixedContentType": "none",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "url": "http://localhost:8000/models/imagenet_mobilenet_v1_100_224_classification/group1-shard2of5.bin?tfjs-format=file"
+   },
+   "requestId": "23560.12",
+   "timestamp": 373226.164172,
+   "type": "Fetch",
+   "wallTime": 1677663912.515618
+}
+[1677663912.518][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSent (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "documentURL": "http://localhost:8000/",
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasUserGesture": false,
+   "initiator": {
+      "stack": {
+         "callFrames": [ {
+            "columnNumber": 211267,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 211170,
+            "functionName": "t",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355810,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355786,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113036,
+            "functionName": "l",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 112789,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113399,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118276,
+            "functionName": "Nv",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118480,
+            "functionName": "o",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118541,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118420,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 356359,
+            "functionName": "NR",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355547,
+            "functionName": "kR",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 362415,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113036,
+            "functionName": "l",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 112789,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113399,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118276,
+            "functionName": "Nv",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118480,
+            "functionName": "o",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, "..." ]
+      },
+      "type": "script"
+   },
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "redirectHasExtraInfo": false,
+   "request": {
+      "headers": {
+         "Referer": "http://localhost:8000/",
+         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+         "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+         "sec-ch-ua-mobile": "?0",
+         "sec-ch-ua-platform": "\"Windows\""
+      },
+      "initialPriority": "High",
+      "isSameSite": true,
+      "method": "GET",
+      "mixedContentType": "none",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "url": "http://localhost:8000/models/imagenet_mobilenet_v1_100_224_classification/group1-shard3of5.bin?tfjs-format=file"
+   },
+   "requestId": "23560.13",
+   "timestamp": 373226.164388,
+   "type": "Fetch",
+   "wallTime": 1677663912.51582
+}
+[1677663912.519][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSent (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "documentURL": "http://localhost:8000/",
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasUserGesture": false,
+   "initiator": {
+      "stack": {
+         "callFrames": [ {
+            "columnNumber": 211267,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 211170,
+            "functionName": "t",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355810,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355786,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113036,
+            "functionName": "l",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 112789,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113399,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118276,
+            "functionName": "Nv",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118480,
+            "functionName": "o",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118541,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118420,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 356359,
+            "functionName": "NR",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355547,
+            "functionName": "kR",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 362415,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113036,
+            "functionName": "l",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 112789,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113399,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118276,
+            "functionName": "Nv",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118480,
+            "functionName": "o",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, "..." ]
+      },
+      "type": "script"
+   },
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "redirectHasExtraInfo": false,
+   "request": {
+      "headers": {
+         "Referer": "http://localhost:8000/",
+         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+         "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+         "sec-ch-ua-mobile": "?0",
+         "sec-ch-ua-platform": "\"Windows\""
+      },
+      "initialPriority": "High",
+      "isSameSite": true,
+      "method": "GET",
+      "mixedContentType": "none",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "url": "http://localhost:8000/models/imagenet_mobilenet_v1_100_224_classification/group1-shard4of5.bin?tfjs-format=file"
+   },
+   "requestId": "23560.14",
+   "timestamp": 373226.164573,
+   "type": "Fetch",
+   "wallTime": 1677663912.516009
+}
+[1677663912.519][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSent (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "documentURL": "http://localhost:8000/",
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasUserGesture": false,
+   "initiator": {
+      "stack": {
+         "callFrames": [ {
+            "columnNumber": 211267,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 211170,
+            "functionName": "t",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355810,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355786,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113036,
+            "functionName": "l",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 112789,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113399,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118276,
+            "functionName": "Nv",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118480,
+            "functionName": "o",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118541,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118420,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 356359,
+            "functionName": "NR",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 355547,
+            "functionName": "kR",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 362415,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113036,
+            "functionName": "l",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 112789,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 113399,
+            "functionName": "",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118276,
+            "functionName": "Nv",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, {
+            "columnNumber": 118480,
+            "functionName": "o",
+            "lineNumber": 16,
+            "scriptId": "9",
+            "url": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"
+         }, "..." ]
+      },
+      "type": "script"
+   },
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "redirectHasExtraInfo": false,
+   "request": {
+      "headers": {
+         "Referer": "http://localhost:8000/",
+         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+         "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+         "sec-ch-ua-mobile": "?0",
+         "sec-ch-ua-platform": "\"Windows\""
+      },
+      "initialPriority": "High",
+      "isSameSite": true,
+      "method": "GET",
+      "mixedContentType": "none",
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "url": "http://localhost:8000/models/imagenet_mobilenet_v1_100_224_classification/group1-shard5of5.bin?tfjs-format=file"
+   },
+   "requestId": "23560.15",
+   "timestamp": 373226.164756,
+   "type": "Fetch",
+   "wallTime": 1677663912.516188
+}
+[1677663912.778][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSentExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "associatedCookies": [  ],
+   "clientSecurityState": {
+      "initiatorIPAddressSpace": "Local",
+      "initiatorIsSecureContext": true,
+      "privateNetworkRequestPolicy": "PreflightWarn"
+   },
+   "connectTiming": {
+      "requestTime": 373226.164232
+   },
+   "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Connection": "keep-alive",
+      "Host": "localhost:8000",
+      "Referer": "http://localhost:8000/",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+   },
+   "requestId": "23560.11"
+}
+[1677663912.779][DEBUG]: DevTools WebSocket Event: Network.responseReceivedExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "blockedCookies": [  ],
+   "headers": {
+      "Content-Length": "4194304",
+      "Content-type": "application/octet-stream",
+      "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+      "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+      "Server": "SimpleHTTP/0.6 Python/3.8.10"
+   },
+   "headersText": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.8.10\r\nDate: Wed, 01 Mar 2023 09:45:12 GMT\r\nContent-type: application/octet-stream\r\nContent-Length: 4194304\r\nLast-Modified: Wed, 01 Mar 2023 07:54:22...",
+   "requestId": "23560.11",
+   "resourceIPAddressSpace": "Local",
+   "statusCode": 200
+}
+[1677663912.780][DEBUG]: DevTools WebSocket Event: Network.responseReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasExtraInfo": true,
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "requestId": "23560.11",
+   "response": {
+      "alternateProtocolUsage": "unspecifiedReason",
+      "connectionId": 123,
+      "connectionReused": false,
+      "encodedDataLength": 205,
+      "fromDiskCache": false,
+      "fromPrefetchCache": false,
+      "fromServiceWorker": false,
+      "headers": {
+         "Content-Length": "4194304",
+         "Content-type": "application/octet-stream",
+         "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+         "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+         "Server": "SimpleHTTP/0.6 Python/3.8.10"
+      },
+      "mimeType": "application/octet-stream",
+      "protocol": "http/1.0",
+      "remoteIPAddress": "127.0.0.1",
+      "remotePort": 8000,
+      "responseTime": 1.677663912768376e+12,
+      "securityState": "secure",
+      "status": 200,
+      "statusText": "OK",
+      "timing": {
+         "connectEnd": 261.777,
+         "connectStart": 0,
+         "dnsEnd": 0,
+         "dnsStart": 0,
+         "proxyEnd": -1,
+         "proxyStart": -1,
+         "pushEnd": 0,
+         "pushStart": 0,
+         "receiveHeadersEnd": 263.111,
+         "requestTime": 373226.164232,
+         "sendEnd": 261.893,
+         "sendStart": 261.826,
+         "sslEnd": -1,
+         "sslStart": -1,
+         "workerFetchStart": -1,
+         "workerReady": -1,
+         "workerRespondWithSettled": -1,
+         "workerStart": -1
+      },
+      "url": "http://localhost:8000/models/imagenet_mobilenet_v1_100_224_classification/group1-shard1of5.bin?tfjs-format=file"
+   },
+   "timestamp": 373226.427761,
+   "type": "Fetch"
+}
+[1677663912.825][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSentExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "associatedCookies": [  ],
+   "clientSecurityState": {
+      "initiatorIPAddressSpace": "Local",
+      "initiatorIsSecureContext": true,
+      "privateNetworkRequestPolicy": "PreflightWarn"
+   },
+   "connectTiming": {
+      "requestTime": 373226.164416
+   },
+   "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Connection": "keep-alive",
+      "Host": "localhost:8000",
+      "Referer": "http://localhost:8000/",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+   },
+   "requestId": "23560.12"
+}
+[1677663912.825][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSentExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "associatedCookies": [  ],
+   "clientSecurityState": {
+      "initiatorIPAddressSpace": "Local",
+      "initiatorIsSecureContext": true,
+      "privateNetworkRequestPolicy": "PreflightWarn"
+   },
+   "connectTiming": {
+      "requestTime": 373226.164946
+   },
+   "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Connection": "keep-alive",
+      "Host": "localhost:8000",
+      "Referer": "http://localhost:8000/",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+   },
+   "requestId": "23560.13"
+}
+[1677663912.825][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSentExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "associatedCookies": [  ],
+   "clientSecurityState": {
+      "initiatorIPAddressSpace": "Local",
+      "initiatorIsSecureContext": true,
+      "privateNetworkRequestPolicy": "PreflightWarn"
+   },
+   "connectTiming": {
+      "requestTime": 373226.165066
+   },
+   "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Connection": "keep-alive",
+      "Host": "localhost:8000",
+      "Referer": "http://localhost:8000/",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+   },
+   "requestId": "23560.14"
+}
+[1677663912.825][DEBUG]: DevTools WebSocket Event: Network.requestWillBeSentExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "associatedCookies": [  ],
+   "clientSecurityState": {
+      "initiatorIPAddressSpace": "Local",
+      "initiatorIsSecureContext": true,
+      "privateNetworkRequestPolicy": "PreflightWarn"
+   },
+   "connectTiming": {
+      "requestTime": 373226.165472
+   },
+   "headers": {
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Connection": "keep-alive",
+      "Host": "localhost:8000",
+      "Referer": "http://localhost:8000/",
+      "Sec-Fetch-Dest": "empty",
+      "Sec-Fetch-Mode": "cors",
+      "Sec-Fetch-Site": "same-origin",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Chromium\";v=\"110\", \"Not A(Brand\";v=\"24\", \"Google Chrome\";v=\"110\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+   },
+   "requestId": "23560.15"
+}
+[1677663912.826][DEBUG]: DevTools WebSocket Event: Network.responseReceivedExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "blockedCookies": [  ],
+   "headers": {
+      "Content-Length": "4194304",
+      "Content-type": "application/octet-stream",
+      "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+      "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+      "Server": "SimpleHTTP/0.6 Python/3.8.10"
+   },
+   "headersText": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.8.10\r\nDate: Wed, 01 Mar 2023 09:45:12 GMT\r\nContent-type: application/octet-stream\r\nContent-Length: 4194304\r\nLast-Modified: Wed, 01 Mar 2023 07:54:22...",
+   "requestId": "23560.14",
+   "resourceIPAddressSpace": "Local",
+   "statusCode": 200
+}
+[1677663912.827][DEBUG]: DevTools WebSocket Event: Network.responseReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasExtraInfo": true,
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "requestId": "23560.14",
+   "response": {
+      "alternateProtocolUsage": "unspecifiedReason",
+      "connectionId": 126,
+      "connectionReused": false,
+      "encodedDataLength": 205,
+      "fromDiskCache": false,
+      "fromPrefetchCache": false,
+      "fromServiceWorker": false,
+      "headers": {
+         "Content-Length": "4194304",
+         "Content-type": "application/octet-stream",
+         "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+         "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+         "Server": "SimpleHTTP/0.6 Python/3.8.10"
+      },
+      "mimeType": "application/octet-stream",
+      "protocol": "http/1.0",
+      "remoteIPAddress": "127.0.0.1",
+      "remotePort": 8000,
+      "responseTime": 1.677663912815088e+12,
+      "securityState": "secure",
+      "status": 200,
+      "statusText": "OK",
+      "timing": {
+         "connectEnd": 307.428,
+         "connectStart": 0.082,
+         "dnsEnd": 0.082,
+         "dnsStart": 0.08,
+         "proxyEnd": -1,
+         "proxyStart": -1,
+         "pushEnd": 0,
+         "pushStart": 0,
+         "receiveHeadersEnd": 308.989,
+         "requestTime": 373226.165066,
+         "sendEnd": 307.706,
+         "sendStart": 307.666,
+         "sslEnd": -1,
+         "sslStart": -1,
+         "workerFetchStart": -1,
+         "workerReady": -1,
+         "workerRespondWithSettled": -1,
+         "workerStart": -1
+      },
+      "url": "http://localhost:8000/models/imagenet_mobilenet_v1_100_224_classification/group1-shard4of5.bin?tfjs-format=file"
+   },
+   "timestamp": 373226.474504,
+   "type": "Fetch"
+}
+[1677663912.827][DEBUG]: DevTools WebSocket Event: Network.responseReceivedExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "blockedCookies": [  ],
+   "headers": {
+      "Content-Length": "4194304",
+      "Content-type": "application/octet-stream",
+      "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+      "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+      "Server": "SimpleHTTP/0.6 Python/3.8.10"
+   },
+   "headersText": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.8.10\r\nDate: Wed, 01 Mar 2023 09:45:12 GMT\r\nContent-type: application/octet-stream\r\nContent-Length: 4194304\r\nLast-Modified: Wed, 01 Mar 2023 07:54:22...",
+   "requestId": "23560.12",
+   "resourceIPAddressSpace": "Local",
+   "statusCode": 200
+}
+[1677663912.827][DEBUG]: DevTools WebSocket Event: Network.responseReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasExtraInfo": true,
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "requestId": "23560.12",
+   "response": {
+      "alternateProtocolUsage": "unspecifiedReason",
+      "connectionId": 124,
+      "connectionReused": false,
+      "encodedDataLength": 205,
+      "fromDiskCache": false,
+      "fromPrefetchCache": false,
+      "fromServiceWorker": false,
+      "headers": {
+         "Content-Length": "4194304",
+         "Content-type": "application/octet-stream",
+         "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+         "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+         "Server": "SimpleHTTP/0.6 Python/3.8.10"
+      },
+      "mimeType": "application/octet-stream",
+      "protocol": "http/1.0",
+      "remoteIPAddress": "127.0.0.1",
+      "remotePort": 8000,
+      "responseTime": 1.677663912815641e+12,
+      "securityState": "secure",
+      "status": 200,
+      "statusText": "OK",
+      "timing": {
+         "connectEnd": 308.018,
+         "connectStart": 0.089,
+         "dnsEnd": 0.089,
+         "dnsStart": 0.086,
+         "proxyEnd": -1,
+         "proxyStart": -1,
+         "pushEnd": 0,
+         "pushStart": 0,
+         "receiveHeadersEnd": 310.369,
+         "requestTime": 373226.164416,
+         "sendEnd": 308.236,
+         "sendStart": 308.174,
+         "sslEnd": -1,
+         "sslStart": -1,
+         "workerFetchStart": -1,
+         "workerReady": -1,
+         "workerRespondWithSettled": -1,
+         "workerStart": -1
+      },
+      "url": "http://localhost:8000/models/imagenet_mobilenet_v1_100_224_classification/group1-shard2of5.bin?tfjs-format=file"
+   },
+   "timestamp": 373226.475122,
+   "type": "Fetch"
+}
+[1677663912.828][DEBUG]: DevTools WebSocket Event: Network.responseReceivedExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "blockedCookies": [  ],
+   "headers": {
+      "Content-Length": "111028",
+      "Content-type": "application/octet-stream",
+      "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+      "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+      "Server": "SimpleHTTP/0.6 Python/3.8.10"
+   },
+   "headersText": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.8.10\r\nDate: Wed, 01 Mar 2023 09:45:12 GMT\r\nContent-type: application/octet-stream\r\nContent-Length: 111028\r\nLast-Modified: Wed, 01 Mar 2023 07:54:22 ...",
+   "requestId": "23560.15",
+   "resourceIPAddressSpace": "Local",
+   "statusCode": 200
+}
+[1677663912.828][DEBUG]: DevTools WebSocket Event: Network.responseReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasExtraInfo": true,
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "requestId": "23560.15",
+   "response": {
+      "alternateProtocolUsage": "unspecifiedReason",
+      "connectionId": 127,
+      "connectionReused": false,
+      "encodedDataLength": 204,
+      "fromDiskCache": false,
+      "fromPrefetchCache": false,
+      "fromServiceWorker": false,
+      "headers": {
+         "Content-Length": "111028",
+         "Content-type": "application/octet-stream",
+         "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+         "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+         "Server": "SimpleHTTP/0.6 Python/3.8.10"
+      },
+      "mimeType": "application/octet-stream",
+      "protocol": "http/1.0",
+      "remoteIPAddress": "127.0.0.1",
+      "remotePort": 8000,
+      "responseTime": 1.67766391281612e+12,
+      "securityState": "secure",
+      "status": 200,
+      "statusText": "OK",
+      "timing": {
+         "connectEnd": 307.046,
+         "connectStart": 0,
+         "dnsEnd": 0,
+         "dnsStart": 0,
+         "proxyEnd": -1,
+         "proxyStart": -1,
+         "pushEnd": 0,
+         "pushStart": 0,
+         "receiveHeadersEnd": 310.025,
+         "requestTime": 373226.165472,
+         "sendEnd": 307.358,
+         "sendStart": 307.321,
+         "sslEnd": -1,
+         "sslStart": -1,
+         "workerFetchStart": -1,
+         "workerReady": -1,
+         "workerRespondWithSettled": -1,
+         "workerStart": -1
+      },
+      "url": "http://localhost:8000/models/imagenet_mobilenet_v1_100_224_classification/group1-shard5of5.bin?tfjs-format=file"
+   },
+   "timestamp": 373226.475901,
+   "type": "Fetch"
+}
+[1677663912.828][DEBUG]: DevTools WebSocket Event: Network.responseReceivedExtraInfo (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "blockedCookies": [  ],
+   "headers": {
+      "Content-Length": "4194304",
+      "Content-type": "application/octet-stream",
+      "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+      "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+      "Server": "SimpleHTTP/0.6 Python/3.8.10"
+   },
+   "headersText": "HTTP/1.0 200 OK\r\nServer: SimpleHTTP/0.6 Python/3.8.10\r\nDate: Wed, 01 Mar 2023 09:45:12 GMT\r\nContent-type: application/octet-stream\r\nContent-Length: 4194304\r\nLast-Modified: Wed, 01 Mar 2023 07:54:22...",
+   "requestId": "23560.13",
+   "resourceIPAddressSpace": "Local",
+   "statusCode": 200
+}
+[1677663912.829][DEBUG]: DevTools WebSocket Event: Network.responseReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "frameId": "44980C8C40FFFE22B26F07F835C5EC60",
+   "hasExtraInfo": true,
+   "loaderId": "FB2928F997847062D45D02E6EF3A3F5F",
+   "requestId": "23560.13",
+   "response": {
+      "alternateProtocolUsage": "unspecifiedReason",
+      "connectionId": 125,
+      "connectionReused": false,
+      "encodedDataLength": 205,
+      "fromDiskCache": false,
+      "fromPrefetchCache": false,
+      "fromServiceWorker": false,
+      "headers": {
+         "Content-Length": "4194304",
+         "Content-type": "application/octet-stream",
+         "Date": "Wed, 01 Mar 2023 09:45:12 GMT",
+         "Last-Modified": "Wed, 01 Mar 2023 07:54:22 GMT",
+         "Server": "SimpleHTTP/0.6 Python/3.8.10"
+      },
+      "mimeType": "application/octet-stream",
+      "protocol": "http/1.0",
+      "remoteIPAddress": "127.0.0.1",
+      "remotePort": 8000,
+      "responseTime": 1.677663912816817e+12,
+      "securityState": "secure",
+      "status": 200,
+      "statusText": "OK",
+      "timing": {
+         "connectEnd": 307.522,
+         "connectStart": 0,
+         "dnsEnd": 0,
+         "dnsStart": 0,
+         "proxyEnd": -1,
+         "proxyStart": -1,
+         "pushEnd": 0,
+         "pushStart": 0,
+         "receiveHeadersEnd": 311.25,
+         "requestTime": 373226.164946,
+         "sendEnd": 307.763,
+         "sendStart": 307.73,
+         "sslEnd": -1,
+         "sslStart": -1,
+         "workerFetchStart": -1,
+         "workerReady": -1,
+         "workerRespondWithSettled": -1,
+         "workerStart": -1
+      },
+      "url": "http://localhost:8000/models/imagenet_mobilenet_v1_100_224_classification/group1-shard3of5.bin?tfjs-format=file"
+   },
+   "timestamp": 373226.47659,
+   "type": "Fetch"
+}
+[1677663912.832][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 2097152,
+   "encodedDataLength": 2097152,
+   "requestId": "23560.11",
+   "timestamp": 373226.477968
+}
+[1677663912.833][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 593715,
+   "encodedDataLength": 134963,
+   "requestId": "23560.12",
+   "timestamp": 373226.480093
+}
+[1677663912.833][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 0,
+   "requestId": "23560.12",
+   "timestamp": 373226.480637
+}
+[1677663912.835][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 983040,
+   "encodedDataLength": 393216,
+   "requestId": "23560.14",
+   "timestamp": 373226.481174
+}
+[1677663912.835][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 262144,
+   "encodedDataLength": 0,
+   "requestId": "23560.14",
+   "timestamp": 373226.482152
+}
+[1677663912.835][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 131072,
+   "encodedDataLength": 0,
+   "requestId": "23560.14",
+   "timestamp": 373226.482455
+}
+[1677663912.835][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 111028,
+   "encodedDataLength": 111028,
+   "requestId": "23560.15",
+   "timestamp": 373226.482785
+}
+[1677663912.835][DEBUG]: DevTools WebSocket Event: Network.loadingFinished (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "encodedDataLength": 111232,
+   "requestId": "23560.15",
+   "shouldReportCorbBlocking": false,
+   "timestamp": 373226.47659
+}
+[1677663912.837][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 855859,
+   "encodedDataLength": 855859,
+   "requestId": "23560.13",
+   "timestamp": 373226.483757
+}
+[1677663912.837][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 131072,
+   "encodedDataLength": 0,
+   "requestId": "23560.13",
+   "timestamp": 373226.484565
+}
+[1677663912.838][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 720896,
+   "encodedDataLength": 720896,
+   "requestId": "23560.11",
+   "timestamp": 373226.485049
+}
+[1677663912.838][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 262144,
+   "encodedDataLength": 0,
+   "requestId": "23560.11",
+   "timestamp": 373226.485741
+}
+[1677663912.839][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 851968,
+   "encodedDataLength": 983040,
+   "requestId": "23560.12",
+   "timestamp": 373226.4865
+}
+[1677663912.839][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 0,
+   "requestId": "23560.12",
+   "timestamp": 373226.487262
+}
+[1677663912.841][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 524288,
+   "encodedDataLength": 1048576,
+   "requestId": "23560.14",
+   "timestamp": 373226.487725
+}
+[1677663912.841][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 196608,
+   "encodedDataLength": 0,
+   "requestId": "23560.14",
+   "timestamp": 373226.488439
+}
+[1677663912.841][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 196608,
+   "encodedDataLength": 0,
+   "requestId": "23560.14",
+   "timestamp": 373226.4888
+}
+[1677663912.842][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 720896,
+   "encodedDataLength": 851968,
+   "requestId": "23560.13",
+   "timestamp": 373226.489539
+}
+[1677663912.842][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 262144,
+   "encodedDataLength": 0,
+   "requestId": "23560.13",
+   "timestamp": 373226.490256
+}
+[1677663912.844][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 720896,
+   "encodedDataLength": 983040,
+   "requestId": "23560.11",
+   "timestamp": 373226.490828
+}
+[1677663912.844][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 131072,
+   "encodedDataLength": 0,
+   "requestId": "23560.11",
+   "timestamp": 373226.491465
+}
+[1677663912.844][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 0,
+   "requestId": "23560.11",
+   "timestamp": 373226.491615
+}
+[1677663912.845][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 520397,
+   "encodedDataLength": 851968,
+   "requestId": "23560.12",
+   "timestamp": 373226.492013
+}
+[1677663912.845][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 524288,
+   "encodedDataLength": 0,
+   "requestId": "23560.12",
+   "timestamp": 373226.492671
+}
+[1677663912.845][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 131072,
+   "encodedDataLength": 0,
+   "requestId": "23560.12",
+   "timestamp": 373226.493159
+}
+[1677663912.847][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 786432,
+   "encodedDataLength": 1638400,
+   "requestId": "23560.14",
+   "timestamp": 373226.493775
+}
+[1677663912.847][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 196608,
+   "encodedDataLength": 0,
+   "requestId": "23560.14",
+   "timestamp": 373226.494698
+}
+[1677663912.847][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 0,
+   "requestId": "23560.14",
+   "timestamp": 373226.494904
+}
+[1677663912.847][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 65536,
+   "encodedDataLength": 0,
+   "requestId": "23560.14",
+   "timestamp": 373226.494979
+}
+[1677663912.848][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 127181,
+   "encodedDataLength": 1110221,
+   "requestId": "23560.13",
+   "timestamp": 373226.495167
+}
+[1677663912.848][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 720896,
+   "encodedDataLength": 0,
+   "requestId": "23560.13",
+   "timestamp": 373226.495597
+}
+[1677663912.848][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 196608,
+   "encodedDataLength": 0,
+   "requestId": "23560.13",
+   "timestamp": 373226.496243
+}
+[1677663912.855][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 196608,
+   "encodedDataLength": 393216,
+   "requestId": "23560.11",
+   "timestamp": 373226.496558
+}
+[1677663912.856][DEBUG]: DevTools WebSocket Event: Network.loadingFinished (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "encodedDataLength": 4194509,
+   "requestId": "23560.11",
+   "shouldReportCorbBlocking": false,
+   "timestamp": 373226.492565
+}
+[1677663912.858][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 1441792,
+   "encodedDataLength": 782541,
+   "requestId": "23560.12",
+   "timestamp": 373226.504056
+}
+[1677663912.864][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 0,
+   "encodedDataLength": 1441792,
+   "requestId": "23560.12",
+   "timestamp": 373226.507253
+}
+[1677663912.864][DEBUG]: DevTools WebSocket Event: Network.loadingFinished (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "encodedDataLength": 4194509,
+   "requestId": "23560.12",
+   "shouldReportCorbBlocking": false,
+   "timestamp": 373226.49979
+}
+[1677663912.871][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 786432,
+   "encodedDataLength": 1114112,
+   "requestId": "23560.14",
+   "timestamp": 373226.512281
+}
+[1677663912.871][DEBUG]: DevTools WebSocket Event: Network.loadingFinished (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "encodedDataLength": 4194509,
+   "requestId": "23560.14",
+   "shouldReportCorbBlocking": false,
+   "timestamp": 373226.498287
+}
+[1677663912.879][DEBUG]: DevTools WebSocket Event: Network.dataReceived (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "dataLength": 1179648,
+   "encodedDataLength": 1376256,
+   "requestId": "23560.13",
+   "timestamp": 373226.519901
+}
+[1677663912.879][DEBUG]: DevTools WebSocket Event: Network.loadingFinished (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "encodedDataLength": 4194509,
+   "requestId": "23560.13",
+   "shouldReportCorbBlocking": false,
+   "timestamp": 373226.501057
+}
+[1677663922.489][INFO]: [0f0d9a585e8f3926cd8ad18a8562a517] COMMAND GetLog {
+   "type": "performance"
+}
+[1677663922.489][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=51) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "awaitPromise": false,
+   "expression": "1",
+   "returnByValue": true
+}
+[1677663922.490][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=51) (session_id=2BB8C21AA5E59A7C9ABE2EC8D6F2A5F8) 44980C8C40FFFE22B26F07F835C5EC60 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1677663922.490][INFO]: [0f0d9a585e8f3926cd8ad18a8562a517] RESPONSE GetLog [ {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.requestWillBeSent\",\"params\":{\"documentURL\":\"http://localhost:8000/\",\"frameId\":\"44980C8C40FFFE22B26F07F835C5EC60\",\"hasUserGesture\":false,\"initiator\":{\"type\":\"other\"},\"l...",
+   "timestamp": 1.677663911392e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.requestWillBeSentExtraInfo\",\"params\":{\"associatedCookies\":[],\"connectTiming\":{\"requestTime\":373225.041001},\"headers\":{\"Accept\":\"text/html,application/xhtml+xml,applica...",
+   "timestamp": 1.677663911694e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.responseReceivedExtraInfo\",\"params\":{\"blockedCookies\":[],\"headers\":{\"Content-Length\":\"41445\",\"Content-type\":\"text/html\",\"Date\":\"Wed, 01 Mar 2023 09:45:11 GMT\",\"Last-Mo...",
+   "timestamp": 1.677663911695e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.responseReceived\",\"params\":{\"frameId\":\"44980C8C40FFFE22B26F07F835C5EC60\",\"hasExtraInfo\":true,\"loaderId\":\"FB2928F997847062D45D02E6EF3A3F5F\",\"requestId\":\"FB2928F99784706...",
+   "timestamp": 1.677663911696e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Page.frameStartedLoading\",\"params\":{\"frameId\":\"44980C8C40FFFE22B26F07F835C5EC60\"}},\"webview\":\"44980C8C40FFFE22B26F07F835C5EC60\"}",
+   "timestamp": 1.677663911697e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Page.frameNavigated\",\"params\":{\"frame\":{\"adFrameStatus\":{\"adFrameType\":\"none\"},\"crossOriginIsolatedContextType\":\"NotIsolated\",\"domainAndRegistry\":\"\",\"gatedAPIFeatures\":[],\"id\"...",
+   "timestamp": 1.677663911712e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.dataReceived\",\"params\":{\"dataLength\":41445,\"encodedDataLength\":0,\"requestId\":\"FB2928F997847062D45D02E6EF3A3F5F\",\"timestamp\":373225.348394}},\"webview\":\"44980C8C40FFFE22...",
+   "timestamp": 1.677663911713e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.requestWillBeSent\",\"params\":{\"documentURL\":\"http://localhost:8000/\",\"frameId\":\"44980C8C40FFFE22B26F07F835C5EC60\",\"hasUserGesture\":false,\"initiator\":{\"columnNumber\":67,...",
+   "timestamp": 1.677663911713e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.requestWillBeSent\",\"params\":{\"documentURL\":\"http://localhost:8000/\",\"frameId\":\"44980C8C40FFFE22B26F07F835C5EC60\",\"hasUserGesture\":false,\"initiator\":{\"columnNumber\":97,...",
+   "timestamp": 1.677663911713e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.requestWillBeSent\",\"params\":{\"documentURL\":\"http://localhost:8000/\",\"frameId\":\"44980C8C40FFFE22B26F07F835C5EC60\",\"hasUserGesture\":false,\"initiator\":{\"columnNumber\":50,...",
+   "timestamp": 1.677663911713e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.loadingFinished\",\"params\":{\"encodedDataLength\":41633,\"requestId\":\"FB2928F997847062D45D02E6EF3A3F5F\",\"shouldReportCorbBlocking\":false,\"timestamp\":373225.343844}},\"webvi...",
+   "timestamp": 1.677663911715e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.requestWillBeSentExtraInfo\",\"params\":{\"associatedCookies\":[],\"clientSecurityState\":{\"initiatorIPAddressSpace\":\"Local\",\"initiatorIsSecureContext\":true,\"privateNetworkRe...",
+   "timestamp": 1.677663911821e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.requestWillBeSentExtraInfo\",\"params\":{\"associatedCookies\":[],\"clientSecurityState\":{\"initiatorIPAddressSpace\":\"Local\",\"initiatorIsSecureContext\":true,\"privateNetworkRe...",
+   "timestamp": 1.677663911821e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.responseReceivedExtraInfo\",\"params\":{\"blockedCookies\":[],\"headers\":{\"access-control-allow-origin\":\"*\",\"access-control-expose-headers\":\"*\",\"age\":\"30\",\"alt-svc\":\"h3=\\\":4...",
+   "timestamp": 1.677663911852e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.responseReceived\",\"params\":{\"frameId\":\"44980C8C40FFFE22B26F07F835C5EC60\",\"hasExtraInfo\":true,\"loaderId\":\"FB2928F997847062D45D02E6EF3A3F5F\",\"requestId\":\"23560.3\",\"respo...",
+   "timestamp": 1.677663911853e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.dataReceived\",\"params\":{\"dataLength\":53097,\"encodedDataLength\":0,\"requestId\":\"23560.3\",\"timestamp\":373225.501295}},\"webview\":\"44980C8C40FFFE22B26F07F835C5EC60\"}",
+   "timestamp": 1.677663911853e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.dataReceived\",\"params\":{\"dataLength\":65536,\"encodedDataLength\":33660,\"requestId\":\"23560.3\",\"timestamp\":373225.507205}},\"webview\":\"44980C8C40FFFE22B26F07F835C5EC60\"}",
+   "timestamp": 1.677663911859e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.dataReceived\",\"params\":{\"dataLength\":241469,\"encodedDataLength\":0,\"requestId\":\"23560.3\",\"timestamp\":373225.507919}},\"webview\":\"44980C8C40FFFE22B26F07F835C5EC60\"}",
+   "timestamp": 1.677663911859e+12
+}, {
+   "level": "INFO",
+   "message": "{\"message\":{\"method\":\"Network.dataReceived\",\"params\":{\"dataLength\":6292,\"encodedDataLength\":1369,\"requestId\":\"23560.3\",\"timestamp\":373225.510707}},\"webview\":\"44980C8C40FFFE22B26F07F835C5EC60\"}",
+   "timestamp": 1.677663911862e+12
+}, "..." ]
+[1677664266.627][INFO]: [0f0d9a585e8f3926cd8ad18a8562a517] COMMAND QuitAll {
+}
+[1677664266.657][INFO]: [0f0d9a585e8f3926cd8ad18a8562a517] RESPONSE QuitAll
+[1677664266.657][DEBUG]: Log type 'driver' lost 1 entries on destruction
+[1677664266.657][DEBUG]: Log type 'browser' lost 1 entries on destruction
+[1677664266.657][DEBUG]: Log type 'performance' lost 0 entries on destruction
